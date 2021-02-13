@@ -22,7 +22,7 @@ In this document, I'll share with you how I learned Vim, listing common commands
 
 Now it's time to learn some handy commands that you can use in normal mode. Getting good at these things is what makes Vim folks to fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| command             | description                                               |
+| command/s           | description                                               |
 | ------------------- | --------------------------------------------------------- |
 | h, j, k, l          | move around in the file (right, down, up, left)           |
 | i                   | enter insert mode                                         |
@@ -37,7 +37,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | gg, G               | move to top of file, bottom of file                       |
 | shift-{, shift}     | move up/down the file by paragraphs                       |
 | 0, $                | move to the beginning/end of a line                       |
-| zz                  | center the screen around where the cursor is at           |
+| zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have miltiple panels open)   |
 | ctrl-b (my config)  | open up NERDTree                                          |
 | :term               | open a terminal panel                                     |
