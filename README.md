@@ -40,7 +40,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | yy                  | copy current line                                         |
 | p                   | paste                                                     |
 | gg, G               | move to top of file, bottom of file                       |
-| shift-{, shift-}     | move up/down the file by paragraphs                       |
+| shift-{, shift-}    | move up/down the file by paragraphs                       |
 | 0, $                | move to the beginning/end of a line                       |
 | zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have multiple panels open)   |

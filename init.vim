@@ -25,6 +25,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
+Plug 'kamykn/spelunker.vim'
+Plug 'kamykn/popup-menu.nvim'
 call plug#end()
 
 " CONFIG
@@ -38,6 +40,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " toggle
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 
+let g:enable_spelunker_vim = 1
+let g:spelunker_check_type = 2
+let g:spelunker_disable_acronym_checking = 1
+let g:spelunker_disable_email_checking = 1
+let g:spelunker_disable_uri_checking = 1
+let g:spelunker_highlight_type = 2
+
+set nospell
 set wrap
 set number
 set tabstop=4
