@@ -13,10 +13,10 @@ In this document, I'll share with you how I learned Vim, listing common commands
 
 ## modes
 
-normal - When you lanuch Vim, you'll be in normal mode, which is when you can use all the fancy key-bindings (keyboard shortcuts) that make Vim so special.
-insert - To actually type text, hit "i" or "a" and then start typing. (Try and figure out the difference between i and a.) Use escape to get back into normal mode.
-command - 
-visual - 
+- normal - When you lanuch Vim, you'll be in normal mode, which is when you can use all the fancy key-bindings (keyboard shortcuts) that make Vim so special.
+- insert - To actually type text, hit "i" or "a" and then start typing. (Try and figure out the difference between i and a.) Use escape to get back into normal mode.
+- command - 
+- visual - 
 
 ## commands
 
