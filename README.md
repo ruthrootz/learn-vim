@@ -35,7 +35,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | yy                  | copy current line                                         |
 | p                   | paste                                                     |
 | gg, G               | move to top of file, bottom of file                       |
-| shift-{, shift}     | move up/down the file by paragraphs                       |
+| shift-{, shift-}     | move up/down the file by paragraphs                       |
 | 0, $                | move to the beginning/end of a line                       |
 | zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have miltiple panels open)   |
@@ -46,13 +46,13 @@ See this [Vim cheatsheet](https://vim.rtorr.com/) for more.
 
 ## .vimrc
 
-The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! So that's why people customize the heck out of their Vim windows. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. The way to customize Vim is to edit the .vimrc file that lives in your home directory. If it's not there, you'll have to make it. I'll include my config file (for neovim, which is why it's called init.vim instead of vimrc) in this repo so you can get a taste.
+The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! So that's why people customize the heck out of their Vim windows. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. The way to customize Vim is to edit the .vimrc file that lives in your home directory. If it's not there, you'll have to make it. I'll include my config file in this repo so you can get a taste. (For Neovim the config file is called init.vim.)
 
-Plug is a plugin manager, so that's the first thing I install, then I use plug to install a bunch of plugins, and the last section of the file is where I set up settings for a bunch of different options, some that are built into Vim and some that are for the installed plugins. There are also a few custom keybindings in there.
+Plug is a plugin manager, so that's the first thing I install, then I use plug to install a bunch of plugins, and the last section of the file is where I set various settings, some that are built into Vim and some that are for the plugins. There are also a few custom keybindings in there.
 
-A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For Mac all you have to do is download the nerd font of your choice, open it up (which will add it to Font Book) and then make sure yout terminal app uses that font for non-unicode characters.
+A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For Mac all you have to do is download the nerd font of your choice, open it up (which will add it to Font Book) and then make sure yout terminal app uses that font for non-unicode characters. (You can't use Mac's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors.)
 
-For more info on customzing, see [this article](). It's the one I followed to get Vim to look like this:
+For more info on customzing, see [this article](https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd). It's the one I followed to get Vim to look like this:
 
 ![my Neovim setup](screenshot.png)
 
