@@ -31,8 +31,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | ------------------- | --------------------------------------------------------- |
 | h, j, k, l          | move around in the file (right, down, up, left)           |
 | i                   | enter insert mode                                         |
-| escape              | go back into normal mode                                  |
 | o                   | open a new line below current line and enter insert mode  |
+| O                   | open a new line above current line and enter insert mode  |
+| a                   | enter insert mode after the cursor                        |
+| A                   | enter insert mode at the end of the current line          |
+| escape              | go back into normal mode                                  |
 | dd                  | delete line                                               |
 | v                   | enter visual mode so you can select text                  |
 | shift-v             | select text line-by-line                                  |
@@ -44,8 +47,12 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | 0, $                | move to the beginning/end of a line                       |
 | zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have multiple panels open)   |
+| gt                  | switch tabs                                               |
 | ctrl-b (my config)  | open up NERDTree                                          |
+| s (my config)       | open up file in vertical split mode with NERDTree         |
+| t (my config)       | open up file in a new tab with NERDTree                   |
 | :term               | open a terminal panel                                     |
+| :q                  | close the current window                                  |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
