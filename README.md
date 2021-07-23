@@ -51,6 +51,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | ctrl-b (my config)  | open up NERDTree                                          |
 | s (my config)       | open up file in vertical split mode with NERDTree         |
 | t (my config)       | open up file in a new tab with NERDTree                   |
+| Zl (my config)      | correct the spelling of the word under the cursor         |
 | :term               | open a terminal panel                                     |
 | :q                  | close the current window                                  |
 
