@@ -51,12 +51,14 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | :term               | open a terminal panel                                     |
 | :q                  | close the current window                                  |
 
-| my config specific  | description                                               |
+| my-config specific  | description                                               |
 | ------------------- | --------------------------------------------------------- |
 | ctrl-b              | open up NERDTree                                          |
 | s                   | open up file in vertical split mode with NERDTree         |
 | t                   | open up file in a new tab with NERDTree                   |
 | Zl                  | correct the spelling of the word under the cursor         |
+| :G/:Git [command]   | run a Git command                                         |
+| gcc                 | comment out selected code                                 |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
@@ -73,4 +75,3 @@ A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to wo
 For more info on customizing, see [this article](https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd). It's the one I followed to get Vim to look like this:
 
 ![my Neovim setup](screenshot.png)
-
