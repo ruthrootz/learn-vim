@@ -48,12 +48,15 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 | zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have multiple panels open)   |
 | gt                  | switch tabs                                               |
-| ctrl-b (my config)  | open up NERDTree                                          |
-| s (my config)       | open up file in vertical split mode with NERDTree         |
-| t (my config)       | open up file in a new tab with NERDTree                   |
-| Zl (my config)      | correct the spelling of the word under the cursor         |
 | :term               | open a terminal panel                                     |
 | :q                  | close the current window                                  |
+
+| my config specific  | description                                               |
+| ------------------- | --------------------------------------------------------- |
+| ctrl-b              | open up NERDTree                                          |
+| s                   | open up file in vertical split mode with NERDTree         |
+| t                   | open up file in a new tab with NERDTree                   |
+| Zl                  | correct the spelling of the word under the cursor         |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
