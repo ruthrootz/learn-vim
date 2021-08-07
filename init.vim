@@ -27,6 +27,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 Plug 'kamykn/spelunker.vim'
 Plug 'kamykn/popup-menu.nvim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'wakatime/vim-wakatime'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " CONFIG
@@ -66,4 +70,3 @@ set splitbelow
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-
