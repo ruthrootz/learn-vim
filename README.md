@@ -1,6 +1,6 @@
 # how I learned Vim
 
-## introduction
+### introduction
 
 In this document, I'll share with you how I learned Vim, listing common commands and tips to help get you started.
 
@@ -8,7 +8,7 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 (FYI, I use NeoVim, but that shouldn't change any of the instructions/commands below.)
 
-## launch / exit Vim
+### launch / exit Vim
 - type `vim` into your terminal of choice (or `nvim` in my case)
 - to open a file type `vim [path to file]`
 - to exit Vim, type `:q` and hit enter
@@ -16,16 +16,16 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 - if you want to save and quit: `:wq`
 - if you want to discard changes: `:q!`
 
-## modes
+### modes
 
 - normal - When you launch Vim, you'll be in normal mode, which is when you can use all the fancy key-bindings (keyboard shortcuts) that make Vim so special. You can tell you're in normal mode because the cursor will be fat.
 - insert - To actually type text, hit `i` or `a` and then start typing. (As an exercise, try and figure out the difference between i and a.) Use escape to get back into normal mode.
 - visual - Visual mode happens when you hit `v` in normal mode. You can use the arrow keys (or h, j, k, l) to select text. You'll need this for copying/pasting and bulk deleting, etc.
 - command - When you hit `:` in normal mode you can type commands, like `w` to save or `q` to quit or `term` to open up a terminal window.
 
-## commands
+### commands
 
-Now it's time to learn some handy commands that you can use in normal mode. Getting good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
+Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
 | command/s           | description                                               |
 | ------------------- | --------------------------------------------------------- |
@@ -62,7 +62,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Gett
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
-## .vimrc
+### .vimrc
 
 The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! That's why people customize the heck out of their Vim windows. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. You customize Vim by editing the .vimrc file that lives in your home directory. If it's not there, simply create a file with the name .vimrc. I'll include [my config file](https://github.com/ruthrootz/learn-vim/blob/main/init.vim) in this repo so you can get a taste. (For Neovim the config file is called init.vim.)
 
