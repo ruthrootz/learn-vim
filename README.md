@@ -4,24 +4,24 @@
 
 In this document, I'll share with you how I learned Vim, listing common commands and tips to help get you started.
 
-Vim is a text editor that runs in the terminal. You can't use a mouse with Vim. All navigation and operations are performed with keyboard shortcuts. It's used by programmers because of how quickly practiced users can navigate files and how customizable it is, especially in the keyboard shortcut area. You should know the basics of using a command prompt before following this document.
+Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All navigation and operations are performed with keyboard shortcuts. It's used by programmers because of how quickly practiced users can navigate files and because of how customizable it is. You should know the basics of using a command prompt before following this document.
 
 (FYI, I use NeoVim, but that shouldn't change any of the instructions/commands below.)
 
 ## launch / exit Vim
-- type "vim" into your terminal of choice
-- to open a file type "vim [path to file]"
-- to exit Vim, type ":q" and hit enter
-- to save changes: ":w"
-- if you want to save and quit: ":wq"
-- if you want to discard changes: ":q!"
+- type `vim` into your terminal of choice (or `nvim` in my case)
+- to open a file type `vim [path to file]`
+- to exit Vim, type `:q` and hit enter
+- to save changes: `:w`
+- if you want to save and quit: `:wq`
+- if you want to discard changes: `:q!`
 
 ## modes
 
 - normal - When you launch Vim, you'll be in normal mode, which is when you can use all the fancy key-bindings (keyboard shortcuts) that make Vim so special. You can tell you're in normal mode because the cursor will be fat.
-- insert - To actually type text, hit "i" or "a" and then start typing. (Try and figure out the difference between i and a.) Use escape to get back into normal mode.
-- visual - Visual mode happens when you hit "v" in normal mode. You can use the arrow keys (or h, j, k, l) to select text. You'll need this for copying/pasting and bulk deleting, etc.
-- command - When you hit ":" in normal mode you can type commands, like "w" to save or "q" to quit or "term" to open up a terminal window.
+- insert - To actually type text, hit `i` or `a` and then start typing. (As an exercise, try and figure out the difference between i and a.) Use escape to get back into normal mode.
+- visual - Visual mode happens when you hit `v` in normal mode. You can use the arrow keys (or h, j, k, l) to select text. You'll need this for copying/pasting and bulk deleting, etc.
+- command - When you hit `:` in normal mode you can type commands, like `w` to save or `q` to quit or `term` to open up a terminal window.
 
 ## commands
 
