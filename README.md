@@ -25,7 +25,7 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 ## commands
 
-Now it's time to learn some handy commands that you can use in normal mode. Getting good at these things is what makes Vim folks to fast at writing code. These are basic commands, roughly in the order I learned them.
+Now it's time to learn some handy commands that you can use in normal mode. Getting good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
 | command/s           | description                                               |
 | ------------------- | --------------------------------------------------------- |
@@ -64,11 +64,9 @@ See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
 ## .vimrc
 
-The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! So that's why people customize the heck out of their Vim windows. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. The way to customize Vim is to edit the .vimrc file that lives in your home directory. If it's not there, you'll have to make it. I'll include my config file in this repo so you can get a taste. (For Neovim the config file is called init.vim.)
+The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! That's why people customize the heck out of their Vim windows. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. You customize Vim by editing the .vimrc file that lives in your home directory. If it's not there, simply create a file with the name .vimrc. I'll include [my config file](https://github.com/ruthrootz/learn-vim/blob/main/init.vim) in this repo so you can get a taste. (For Neovim the config file is called init.vim.)
 
-Plug is a plugin manager, so that's the first thing I install, then I use plug to install a bunch of plugins, and the last section of the file is where I set various settings, some that are built into Vim and some that are for the plugins. There are also a few custom keybindings in there.
-
-Run :PlugInstall to install the plugins. See [my rc file](https://github.com/ruthrootz/learn-vim/blob/main/init.vim).
+Plug is a plugin manager, so that's the first thing I installed, then I used plug to install a bunch of plugins, and the last section of the file is where I set various settings, some that are built into Vim and some that are for the plugins. There are also a few custom keybindings in there. Run :PlugInstall to install the plugins.
 
 A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For Mac all you have to do is download the nerd font of your choice, open it up (which will add it to Font Book) and then make sure your terminal app uses that font for non-unicode characters. (You can't use Mac's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors.)
 
