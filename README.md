@@ -43,6 +43,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | yy                  | copy current line                                         |
 | p                   | paste                                                     |
 | gg, G               | move to top of file, bottom of file                       |
+| ggVG                | select all                                                |
 | shift-{, shift-}    | move up/down the file by paragraphs                       |
 | 0, $                | move to the beginning/end of a line                       |
 | zz                  | center the screen around the cursor                       |
