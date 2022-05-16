@@ -36,6 +36,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | a                   | enter insert mode after the cursor                        |
 | A                   | enter insert mode at the end of the current line          |
 | escape              | go back into normal mode                                  |
+| u                   | undo                                                      |
+| ctrl-r              | redo                                                      |
 | dd                  | delete line                                               |
 | v                   | enter visual mode so you can select text                  |
 | shift-v             | select text line-by-line                                  |
