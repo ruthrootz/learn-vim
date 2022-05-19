@@ -46,7 +46,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | p                   | paste                                                     |
 | gg, G               | move to top of file, bottom of file                       |
 | ggVG                | select all                                                |
-| shift-{, shift-}    | move up/down the file by paragraphs                       |
+| {, }                | move up/down the file by paragraphs                       |
 | 0, $                | move to the beginning/end of a line                       |
 | zz                  | center the screen around the cursor                       |
 | crtl-ww             | switch windows (for when you have multiple panels open)   |
