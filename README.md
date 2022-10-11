@@ -6,7 +6,7 @@ In this document, I'll share with you how I learned Vim, listing common commands
 
 Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All navigation and operations are performed with keyboard shortcuts. It's used by programmers because of how quickly practiced users can navigate files and because of how customizable it is. You should know the basics of using a command prompt before following this document.
 
-(FYI, I use NeoVim, but that shouldn't change any of the instructions/commands below.)
+(FYI, I use Neovim, but that shouldn't change any of the instructions/commands below.)
 
 ### launch / exit Vim
 - type `vim` into your terminal of choice (or `nvim` in my case)
