@@ -62,6 +62,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | s                   | open up file in vertical split mode with NERDTree         |
 | t                   | open up file in a new tab with NERDTree                   |
 | Zl                  | correct the spelling of the word under the cursor         |
+| ctrl-y              | select an intellisense option from the list               |
 | :G/:Git [command]   | run a Git command                                         |
 | gcc                 | comment out selected code                                 |
 
