@@ -53,6 +53,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | gt                  | switch tabs                                               |
 | :term               | open a terminal panel                                     |
 | :q                  | close the current window                                  |
+| :/[search term]     | search file                                               |
+| :noh                | "no highlight", clears highlighting on search results     |
 
 | my-config specific  | description                                               |
 | ------------------- | --------------------------------------------------------- |
