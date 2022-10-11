@@ -71,7 +71,7 @@ The weirdest thing about Vim for most people is that it runs in a terminal. It's
 
 Plug is a plugin manager, so that's the first thing I installed, then I used plug to install a bunch of plugins, and the last section of the file is where I set various settings, some that are built into Vim and some that are for the plugins. There are also a few custom keybindings in there. Run :PlugInstall to install the plugins.
 
-A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For Mac all you have to do is download the nerd font of your choice, open it up (which will add it to Font Book) and then make sure your terminal app uses that font for non-unicode characters. (You can't use Mac's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors.)
+A word of advice: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For Mac all you have to do is download the nerd font of your choice, install it (which will add it to Font Book) and then make sure your terminal app uses that font for non-unicode characters. (You can't use Mac's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors. I use iTerm2.)
 
 For more info on customizing, see [this article](https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd). It's the one I followed to get Vim to look like this:
 
