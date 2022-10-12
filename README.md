@@ -64,7 +64,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | s                   | open up file in vertical split mode with NERDTree                                    |
 | t                   | open up file in a new tab with NERDTree                                              |
 | Zl                  | correct the spelling of the word under the cursor                                    |
-| ZL                  | display a list of spelling suggestions for the word under the cursor                |
+| ZL                  | display a list of spelling suggestions for the word under the cursor                 |
 | ctrl-y              | select an intellisense option from the list                                          |
 | :G/:Git [command]   | run a Git command                                                                    |
 | gcc                 | comment out selected code                                                            |
@@ -79,7 +79,7 @@ The weirdest thing about Vim for most people is that it runs in a terminal. It's
 
 Advice for MacOS users: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For MacOS all you have to do is download the nerd font of your choice, install it (which will add it to Font Book) and then make sure your terminal app uses that font for non-unicode characters. (You can't use MacOS's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors. I use iTerm2.)
 
-One extra thing I did: I remapped my capslock key to be my escape key so it's easier/faster to exit insert/visual mode.
+One extra thing I did: I remapped my caps lock key to be my escape key so it's easier/faster to exit insert/visual mode.
 
 #
 
