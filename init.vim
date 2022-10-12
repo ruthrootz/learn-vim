@@ -17,20 +17,18 @@ endif
 
 " PLUG
 call plug#begin("~/.vim/plugged")
-Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'sheerun/vim-polyglot'
-Plug 'joshdick/onedark.vim'
 Plug 'kamykn/spelunker.vim'
 Plug 'kamykn/popup-menu.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wakatime/vim-wakatime'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
+Plug 'navarasu/onedark.nvim'
 call plug#end()
 
 " CONFIG
@@ -61,6 +59,9 @@ set cursorline
 set encoding=UTF-8
 set guifont=DroidSansMono_Nerd_Font:h11
 syntax on
+let g:onedark_config = {
+    \ 'style': 'deep',
+\}
 colorscheme onedark
 
 " open new split panes to right and below
@@ -70,3 +71,4 @@ set splitbelow
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
