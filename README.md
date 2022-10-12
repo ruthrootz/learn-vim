@@ -80,6 +80,10 @@ One extra thing I did: I remapped my capslock key to be my escape key so it's ea
 
 #
 
+### resources
+
+Fantastic [video series by ThePrimeagen](https://www.youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R) for learning Vim movements, going from beginner to expert.
+
 For more info on customizing, see [this article](https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd). It's the one I followed to get Vim to look like this:
 
 #
