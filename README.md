@@ -54,6 +54,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :term               | open a terminal panel                                                                |
 | :q                  | close the current window                                                             |
 | :/[search term]     | search file; you can use Regex                                                       |
+| n                   | while searching, go to next occurance                                                |
+| N                   | while searching, go to previous occurance                                            |
 | :noh                | "no highlight", clears highlighting on search results                                |
 | "*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "*p                 | paste from system clipboard                                                          |
