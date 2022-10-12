@@ -27,34 +27,36 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| command/s           | description                                               |
-| ------------------- | --------------------------------------------------------- |
-| h, j, k, l          | move around in the file (right, down, up, left)           |
-| i                   | enter insert mode                                         |
-| o                   | open a new line below current line and enter insert mode  |
-| O                   | open a new line above current line and enter insert mode  |
-| a                   | enter insert mode after the cursor                        |
-| A                   | enter insert mode at the end of the current line          |
-| escape              | go back into normal mode                                  |
-| u                   | undo                                                      |
-| ctrl-r              | redo                                                      |
-| dd                  | delete line                                               |
-| v                   | enter visual mode so you can select text                  |
-| shift-v             | select text line-by-line                                  |
-| y                   | copy                                                      |
-| yy                  | copy current line                                         |
-| p                   | paste                                                     |
-| gg, G               | move to top of file, bottom of file                       |
-| ggVG                | select all                                                |
-| {, }                | move up/down the file by paragraphs                       |
-| 0, $                | move to the beginning/end of a line                       |
-| zz                  | center the screen around the cursor                       |
-| crtl-ww             | switch windows (for when you have multiple panels open)   |
-| gt                  | switch tabs                                               |
-| :term               | open a terminal panel                                     |
-| :q                  | close the current window                                  |
-| :/[search term]     | search file; you can use Regex                            |
-| :noh                | "no highlight", clears highlighting on search results     |
+| command/s           | description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l          | move around in the file (right, down, up, left)                                      |
+| i                   | enter insert mode                                                                    |
+| o                   | open a new line below current line and enter insert mode                             |
+| O                   | open a new line above current line and enter insert mode                             |
+| a                   | enter insert mode after the cursor                                                   |
+| A                   | enter insert mode at the end of the current line                                     |
+| escape              | go back into normal mode                                                             |
+| u                   | undo                                                                                 |
+| ctrl-r              | redo                                                                                 |
+| dd                  | delete line                                                                          |
+| v                   | enter visual mode so you can select text                                             |
+| shift-v             | select text line-by-line                                                             |
+| y                   | copy                                                                                 |
+| yy                  | copy current line                                                                    |
+| p                   | paste                                                                                |
+| gg, G               | move to top of file, bottom of file                                                  |
+| ggVG                | select all                                                                           |
+| {, }                | move up/down the file by paragraphs                                                  |
+| 0, $                | move to the beginning/end of a line                                                  |
+| zz                  | center the screen around the cursor                                                  |
+| crtl-ww             | switch windows (for when you have multiple panels open)                              |
+| gt                  | switch tabs                                                                          |
+| :term               | open a terminal panel                                                                |
+| :q                  | close the current window                                                             |
+| :/[search term]     | search file; you can use Regex                                                       |
+| :noh                | "no highlight", clears highlighting on search results                                |
+| "*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "*p                 | paste from system clipboard                                                          |
 
 | my-config specific  | description                                               |
 | ------------------- | --------------------------------------------------------- |
