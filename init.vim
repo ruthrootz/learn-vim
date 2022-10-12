@@ -29,7 +29,6 @@ Plug 'kamykn/popup-menu.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wakatime/vim-wakatime'
 Plug 'navarasu/onedark.nvim'
-Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 " CONFIG
@@ -72,4 +71,3 @@ set splitbelow
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-
