@@ -58,15 +58,16 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | "*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "*p                 | paste from system clipboard                                                          |
 
-| my-config specific  | description                                               |
-| ------------------- | --------------------------------------------------------- |
-| ctrl-b              | open up NERDTree                                          |
-| s                   | open up file in vertical split mode with NERDTree         |
-| t                   | open up file in a new tab with NERDTree                   |
-| Zl                  | correct the spelling of the word under the cursor         |
-| ctrl-y              | select an intellisense option from the list               |
-| :G/:Git [command]   | run a Git command                                         |
-| gcc                 | comment out selected code                                 |
+| my-config specific  | description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| ctrl-b              | open up NERDTree                                                                     |
+| s                   | open up file in vertical split mode with NERDTree                                    |
+| t                   | open up file in a new tab with NERDTree                                              |
+| Zl                  | correct the spelling of the word under the cursor                                    |
+| ZL                  | display a list of spelling suggestions for the word under the cursor                |
+| ctrl-y              | select an intellisense option from the list                                          |
+| :G/:Git [command]   | run a Git command                                                                    |
+| gcc                 | comment out selected code                                                            |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
