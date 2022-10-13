@@ -112,7 +112,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | Zl                  | correct the spelling of the word under the cursor                                    |
 | ZL                  | display a list of spelling suggestions for the word under the cursor                 |
 | ctrl-y              | select an intellisense option from the list                                          |
-| gcc                 | comment out selected code                                                            |
+| cmd-/               | comment/uncomment out selected code                                                  |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
