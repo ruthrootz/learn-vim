@@ -1,5 +1,23 @@
 # learn Vim
 
+[introduction](#introduction)
+
+[launch / exit Vim](#launch--exit-vim)
+
+[modes](#modes)
+
+[commands](#commands)
+
+[.vimrc](#vimrc)
+
+[resources](#resources)
+
+[C# .NET setup](#c-net-setup)
+
+[node.js setup](#nodejs-setup)
+
+#
+
 ### introduction
 
 In this document, I'll share with you how I learned Vim, listing common commands and tips to help get you started.
