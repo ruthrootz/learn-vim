@@ -31,19 +31,20 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l          | move around in the file (right, down, up, left)                                      |
 | i                   | enter insert mode                                                                    |
+| esc                 | go back into normal mode                                                             |
+| v                   | enter visual mode so you can select text                                             |
+| shift-v             | select text line-by-line                                                             |
 | o                   | open a new line below current line and enter insert mode                             |
 | O                   | open a new line above current line and enter insert mode                             |
 | a                   | enter insert mode after the cursor                                                   |
 | A                   | enter insert mode at the end of the current line                                     |
-| escape              | go back into normal mode                                                             |
 | u                   | undo                                                                                 |
 | ctrl-r              | redo                                                                                 |
 | dd                  | delete line                                                                          |
-| v                   | enter visual mode so you can select text                                             |
-| shift-v             | select text line-by-line                                                             |
 | y                   | copy                                                                                 |
 | yy                  | copy current line                                                                    |
-| p                   | paste                                                                                |
+| p                   | paste below current line                                                             |
+| P                   | paste above current line                                                             |
 | gg, G               | move to top of file, bottom of file                                                  |
 | ggVG                | select all                                                                           |
 | {, }                | move up/down the file by paragraphs                                                  |
