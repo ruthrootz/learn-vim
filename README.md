@@ -70,13 +70,17 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ggVG                | select all                                                                           |
 | {, }                | move up/down the file by paragraphs                                                  |
 | 0, $                | move to the beginning/end of a line                                                  |
+| *                   | jump to the next occurance of whatever is under the cursor                           |
+| :/[search term]     | search file (you can use Regex)                                                      |
+| n, N                | while searching, go to next/previous occurance                                       |
+
+| window management   | description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
 | zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
 | gt, gT              | switch tabs (forward/back)                                                           |
 | :term               | open a terminal panel                                                                |
 | :q                  | close the current window                                                             |
-| :/[search term]     | search file (you can use Regex)                                                      |
-| n, N                | while searching, go to next/previous occurance                                       |
 | :noh                | "no highlight", clears highlighting on search results                                |
 
 | my-config specific  | description                                                                          |
