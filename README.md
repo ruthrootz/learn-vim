@@ -45,17 +45,28 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| command/s           | description                                                                          |
+| learn these first   |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l          | move around in the file (right, down, up, left)                                      |
+| i                   | enter insert mode                                                                    |
 | esc                 | go back into normal mode                                                             |
 | v                   | enter visual mode so you can select text                                             |
 | shift-v             | select text line-by-line                                                             |
+| u                   | undo                                                                                 |
+| ctrl-r              | redo                                                                                 |
+| y                   | copy                                                                                 |
+| p, P                | paste below/above the current line                                                   |
+
+| core commands       | description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
 | i                   | enter insert mode                                                                    |
 | I                   | enter insert mode at the beginning of the current line                               |
 | a                   | enter insert mode after the cursor                                                   |
 | A                   | enter insert mode at the end of the current line                                     |
 | o, O                | open a new line below/above the current line and enter insert mode                   |
+| esc                 | go back into normal mode                                                             |
+| v                   | enter visual mode so you can select text                                             |
+| shift-v             | select text line-by-line                                                             |
 | u                   | undo                                                                                 |
 | ctrl-r              | redo                                                                                 |
 | x                   | delete the character under the cursor                                                |
@@ -66,15 +77,20 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | p, P                | paste below/above the current line                                                   |
 | "\*y                | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "\*p                | paste from system clipboard                                                          |
-| gg, G               | move to top of file, bottom of file                                                  |
 | ggVG                | select all                                                                           |
+
+| moving around       |                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l          | move around in the file (right, down, up, left)                                      |
 | {, }                | move up/down the file by paragraphs                                                  |
 | 0, $                | move to the beginning/end of a line                                                  |
+| gg, G               | move to top of file, bottom of file                                                  |
 | *                   | jump to the next occurance of whatever is under the cursor                           |
+| #                   | jump to the previous occurance of whatever is under the cursor                       |
 | :/[search term]     | search file (you can use Regex)                                                      |
 | n, N                | while searching, go to next/previous occurance                                       |
 
-| window management   | description                                                                          |
+| window management   |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
@@ -83,7 +99,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :q                  | close the current window                                                             |
 | :noh                | "no highlight", clears highlighting on search results                                |
 
-| my-config specific  | description                                                                          |
+| my-config specific  |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | ctrl-b              | open up NERDTree                                                                     |
 | s                   | open up file in vertical split mode with NERDTree                                    |
