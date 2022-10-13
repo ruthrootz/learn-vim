@@ -1,4 +1,4 @@
-# how I learned Vim
+# learn Vim
 
 ### introduction
 
