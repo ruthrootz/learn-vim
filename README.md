@@ -95,3 +95,11 @@ For more info on customizing, see [this article](https://medium.com/better-progr
 #
 
 ![my Neovim setup](screenshot.png)
+
+#
+
+### C# .NET setup
+.....
+
+### node.js setup
+.....
