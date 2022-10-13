@@ -99,7 +99,9 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
 | gt, gT              | switch tabs (forward/back)                                                           |
-| :term               | open a terminal panel                                                                |
+| :term               | open a terminal window (replaces current window)                                     |
+| :vsplit term://zsh  | open a (in my case) zsh terminal to the right of the current window                  |
+| :tabnew term://zsh  | open a (in my case) zsh terminal in a new tab                                        |
 | :noh                | "no highlight", clears highlighting on search results                                |
 
 | my-config specific  |                                                                                      |
