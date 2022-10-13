@@ -17,10 +17,16 @@ endif
 
 " PLUG
 call plug#begin("~/.vim/plugged")
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+Plug 'OmniSharp/omnisharp-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'sheerun/vim-polyglot'
@@ -28,10 +34,14 @@ Plug 'kamykn/spelunker.vim'
 Plug 'kamykn/popup-menu.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wakatime/vim-wakatime'
+Plug 'preservim/nerdcommenter'
 Plug 'navarasu/onedark.nvim'
 call plug#end()
 
 " CONFIG
+
+" open NERDTree automatically
+autocmd VimEnter * NERDTree
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
@@ -40,7 +50,9 @@ let g:NERDTreeStatusline = ''
 " automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+nnoremap <silent> <C-x> :NERDTreeToggle<CR>
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
 
 let g:enable_spelunker_vim = 1
 let g:spelunker_check_type = 2
@@ -48,6 +60,8 @@ let g:spelunker_disable_acronym_checking = 1
 let g:spelunker_disable_email_checking = 1
 let g:spelunker_disable_uri_checking = 1
 let g:spelunker_highlight_type = 2
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 set nospell
 set wrap
@@ -71,3 +85,4 @@ set splitbelow
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
