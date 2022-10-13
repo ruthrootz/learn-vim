@@ -56,6 +56,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ctrl-r              | redo                                                                                 |
 | y                   | copy                                                                                 |
 | p, P                | paste below/above the current line                                                   |
+| :w                  | save the current file                                                                |
+| :q                  | close the current window                                                             |
 
 | core commands       | description                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------ |
@@ -78,6 +80,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | "\*y                | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "\*p                | paste from system clipboard                                                          |
 | ggVG                | select all                                                                           |
+| :w                  | save the current file                                                                |
+| :q                  | close the current window                                                             |
 
 | moving around       |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
@@ -96,7 +100,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
 | gt, gT              | switch tabs (forward/back)                                                           |
 | :term               | open a terminal panel                                                                |
-| :q                  | close the current window                                                             |
 | :noh                | "no highlight", clears highlighting on search results                                |
 
 | my-config specific  |                                                                                      |
