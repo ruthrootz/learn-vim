@@ -30,36 +30,36 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | command/s           | description                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l          | move around in the file (right, down, up, left)                                      |
-| i                   | enter insert mode                                                                    |
 | esc                 | go back into normal mode                                                             |
 | v                   | enter visual mode so you can select text                                             |
 | shift-v             | select text line-by-line                                                             |
-| o                   | open a new line below current line and enter insert mode                             |
-| O                   | open a new line above current line and enter insert mode                             |
+| i                   | enter insert mode                                                                    |
+| I                   | enter insert mode at the beginning of the current line                               |
 | a                   | enter insert mode after the cursor                                                   |
 | A                   | enter insert mode at the end of the current line                                     |
+| o, O                | open a new line below/above the current line and enter insert mode                   |
 | u                   | undo                                                                                 |
 | ctrl-r              | redo                                                                                 |
-| dd                  | delete line                                                                          |
+| x                   | delete the character under the cursor                                                |
+| dd                  | delete current line                                                                  |
+| dw                  | delete current word                                                                  |
 | y                   | copy                                                                                 |
 | yy                  | copy current line                                                                    |
-| p                   | paste below current line                                                             |
-| P                   | paste above current line                                                             |
+| p, P                | paste below/above the current line                                                   |
+| "\*y                | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "\*p                | paste from system clipboard                                                          |
 | gg, G               | move to top of file, bottom of file                                                  |
 | ggVG                | select all                                                                           |
 | {, }                | move up/down the file by paragraphs                                                  |
 | 0, $                | move to the beginning/end of a line                                                  |
-| zz                  | center the screen around the cursor                                                  |
+| zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
-| gt                  | switch tabs                                                                          |
+| gt, gT              | switch tabs (forward/back)                                                           |
 | :term               | open a terminal panel                                                                |
 | :q                  | close the current window                                                             |
-| :/[search term]     | search file; you can use Regex                                                       |
-| n                   | while searching, go to next occurance                                                |
-| N                   | while searching, go to previous occurance                                            |
+| :/[search term]     | search file (you can use Regex)                                                      |
+| n, N                | while searching, go to next/previous occurance                                       |
 | :noh                | "no highlight", clears highlighting on search results                                |
-| "*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
-| "*p                 | paste from system clipboard                                                          |
 
 | my-config specific  | description                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------ |
