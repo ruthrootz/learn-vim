@@ -47,71 +47,71 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| learn these first   |                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| h, j, k, l          | move around in the file (right, down, up, left)                                      |
-| i                   | enter insert mode                                                                    |
-| esc                 | go back into normal mode                                                             |
-| v                   | enter visual mode so you can select text                                             |
-| shift-v             | select text line-by-line                                                             |
-| u                   | undo                                                                                 |
-| ctrl-r              | redo                                                                                 |
-| y                   | copy                                                                                 |
-| p, P                | paste below/above the current line                                                   |
-| :w                  | save the current file                                                                |
-| :q                  | close the current window                                                             |
+| learn these first    |                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l           | move around in the file (right, down, up, left)                                      |
+| i                    | enter insert mode                                                                    |
+| esc                  | go back into normal mode                                                             |
+| v                    | enter visual mode so you can select text                                             |
+| shift-v              | select text line-by-line                                                             |
+| u                    | undo                                                                                 |
+| ctrl-r               | redo                                                                                 |
+| y                    | copy                                                                                 |
+| p, P                 | paste below/above the current line                                                   |
+| :w                   | save the current file                                                                |
+| :q                   | close the current window                                                             |
 
-| core commands       | description                                                                          |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| h, j, k, l          | move around in the file (right, down, up, left)                                      |
-| {, }                | move up/down the file by paragraphs                                                  |
-| 0, $                | move to the beginning/end of a line                                                  |
-| gg, G               | move to top of file, bottom of file                                                  |
-| i                   | enter insert mode                                                                    |
-| I                   | enter insert mode at the beginning of the current line                               |
-| a                   | enter insert mode after the cursor                                                   |
-| A                   | enter insert mode at the end of the current line                                     |
-| o, O                | open a new line below/above the current line and enter insert mode                   |
-| esc                 | go back into normal mode                                                             |
-| v                   | enter visual mode so you can select text                                             |
-| shift-v             | select text line-by-line                                                             |
-| :/[search term]     | search file (you can use Regex)                                                      |
-| n, N                | while searching, go to next/previous occurance                                       |
-| *                   | jump to the next occurance of whatever is under the cursor                           |
-| #                   | jump to the previous occurance of whatever is under the cursor                       |
-| u                   | undo                                                                                 |
-| ctrl-r              | redo                                                                                 |
-| x                   | delete the character under the cursor                                                |
-| dd                  | delete current line                                                                  |
-| dw                  | delete current word                                                                  |
-| y                   | copy                                                                                 |
-| yy                  | copy current line                                                                    |
-| p, P                | paste below/above the current line                                                   |
-| "\*y                | copy selected text to system clipboard (so you can paste outside of the terminal)    |
-| "\*p                | paste from system clipboard                                                          |
-| ggVG                | select all                                                                           |
-| :w                  | save the current file                                                                |
-| :q                  | close the current window                                                             |
-| zz                  | center the screen around the current line                                            |
-| crtl-ww             | switch windows (for when you have multiple panels open)                              |
-| gt, gT              | switch tabs (forward/back)                                                           |
-| :term               | open a terminal window (replaces current window)                                     |
-| :vsplit term://zsh  | open a (in my case) zsh terminal to the right of the current window                  |
-| :tabnew term://zsh  | open a (in my case) zsh terminal in a new tab                                        |
-| :noh                | "no highlight", clears highlighting on search results                                |
+| keybindings/commands |                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l           | move around in the file (right, down, up, left)                                      |
+| {, }                 | move up/down the file by paragraphs                                                  |
+| 0, $                 | move to the beginning/end of a line                                                  |
+| gg, G                | move to top of file, bottom of file                                                  |
+| i                    | enter insert mode                                                                    |
+| I                    | enter insert mode at the beginning of the current line                               |
+| a                    | enter insert mode after the cursor                                                   |
+| A                    | enter insert mode at the end of the current line                                     |
+| o, O                 | open a new line below/above the current line and enter insert mode                   |
+| esc                  | go back into normal mode                                                             |
+| v                    | enter visual mode so you can select text                                             |
+| shift-v              | select text line-by-line                                                             |
+| :/[search term]      | search file (you can use Regex)                                                      |
+| n, N                 | while searching, go to next/previous occurance                                       |
+| *                    | jump to the next occurance of whatever is under the cursor                           |
+| #                    | jump to the previous occurance of whatever is under the cursor                       |
+| u                    | undo                                                                                 |
+| ctrl-r               | redo                                                                                 |
+| x                    | delete the character under the cursor                                                |
+| dd                   | delete current line                                                                  |
+| dw                   | delete current word                                                                  |
+| y                    | copy                                                                                 |
+| yy                   | copy current line                                                                    |
+| p, P                 | paste below/above the current line                                                   |
+| "\*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "\*p                 | paste from system clipboard                                                          |
+| ggVG                 | select all                                                                           |
+| :w                   | save the current file                                                                |
+| :q                   | close the current window                                                             |
+| zz                   | center the screen around the current line                                            |
+| crtl-ww              | switch windows (for when you have multiple panels open)                              |
+| gt, gT               | switch tabs (forward/back)                                                           |
+| :term                | open a terminal window (replaces current window)                                     |
+| :vsplit term://zsh   | open a (in my case) zsh terminal to the right of the current window                  |
+| :tabnew term://zsh   | open a (in my case) zsh terminal in a new tab                                        |
+| :noh                 | "no highlight", clears highlighting on search results                                |
 
-| my-config specific  |                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| ctrl-x              | open up NERDTree                                                                     |
-| ctrl-y              | select an intellisense option from the list                                          |
-| cmd-/               | comment/uncomment selected code                                                      |
-| Zl                  | correct the spelling of the word under the cursor                                    |
-| ZL                  | display a list of spelling suggestions for the word under the cursor                 |
-| \fp                 | find files in specified path                                                         |
-| \ff                 | find files in `cwd`                                                                  |
-| \fb                 | open file browser                                                                    |
-| s                   | open up file in vertical split mode with NERDTree                                    |
-| t                   | open up file in a new tab with NERDTree                                              |
+| my-config specific   |                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| ctrl-x               | open up NERDTree                                                                     |
+| ctrl-y               | select an intellisense option from the list                                          |
+| cmd-/                | comment/uncomment selected code                                                      |
+| Zl                   | correct the spelling of the word under the cursor                                    |
+| ZL                   | display a list of spelling suggestions for the word under the cursor                 |
+| \fp                  | find files in specified path                                                         |
+| \ff                  | find files in `cwd`                                                                  |
+| \fb                  | open file browser                                                                    |
+| s                    | open up file in vertical split mode with NERDTree                                    |
+| t                    | open up file in a new tab with NERDTree                                              |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
