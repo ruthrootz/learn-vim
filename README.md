@@ -115,6 +115,9 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ZL                  | display a list of spelling suggestions for the word under the cursor                 |
 | ctrl-y              | select an intellisense option from the list                                          |
 | cmd-/               | comment/uncomment out selected code                                                  |
+| \fp                 | find files in specified path                                                         |
+| \ff                 | find files in `cwd`                                                                  |
+| \fb                 | open file browser                                                                    |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
