@@ -12,6 +12,8 @@
 
 [resources](#resources)
 
+[debugging](#debugging)
+
 [C# .NET setup](#c-net-setup)
 
 [node.js setup](#nodejs-setup)
@@ -140,7 +142,7 @@ For more info on customizing, see [this article](https://medium.com/better-progr
 
 #
 
-### debuging
+### debugging
 
 I'm using [vimspector](https://github.com/puremourning/vimspector) for debugging. I'm still getting things set up by following [this doc](https://puremourning.github.io/vimspector-web/)...
 
