@@ -6,7 +6,7 @@
 
 [modes](#modes)
 
-[commands](#commands)
+[keybindings / commands](#keybindings--commands)
 
 [.vimrc](#vimrc)
 
@@ -43,7 +43,7 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 - visual: Visual mode happens when you hit `v` in normal mode. You can use the arrow keys (or h, j, k, l) to select text. You'll need this for copying/pasting and bulk deleting, etc.
 - command: When you hit `:` in normal mode you can type commands, like `w` to save or `q` to quit or `term` to open up a terminal window.
 
-### commands
+### keybindings / commands
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
