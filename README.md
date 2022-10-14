@@ -63,6 +63,10 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 | core commands       | description                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l          | move around in the file (right, down, up, left)                                      |
+| {, }                | move up/down the file by paragraphs                                                  |
+| 0, $                | move to the beginning/end of a line                                                  |
+| gg, G               | move to top of file, bottom of file                                                  |
 | i                   | enter insert mode                                                                    |
 | I                   | enter insert mode at the beginning of the current line                               |
 | a                   | enter insert mode after the cursor                                                   |
@@ -71,6 +75,10 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | esc                 | go back into normal mode                                                             |
 | v                   | enter visual mode so you can select text                                             |
 | shift-v             | select text line-by-line                                                             |
+| :/[search term]     | search file (you can use Regex)                                                      |
+| n, N                | while searching, go to next/previous occurance                                       |
+| *                   | jump to the next occurance of whatever is under the cursor                           |
+| #                   | jump to the previous occurance of whatever is under the cursor                       |
 | u                   | undo                                                                                 |
 | ctrl-r              | redo                                                                                 |
 | x                   | delete the character under the cursor                                                |
@@ -84,20 +92,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ggVG                | select all                                                                           |
 | :w                  | save the current file                                                                |
 | :q                  | close the current window                                                             |
-
-| moving around       |                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| h, j, k, l          | move around in the file (right, down, up, left)                                      |
-| {, }                | move up/down the file by paragraphs                                                  |
-| 0, $                | move to the beginning/end of a line                                                  |
-| gg, G               | move to top of file, bottom of file                                                  |
-| *                   | jump to the next occurance of whatever is under the cursor                           |
-| #                   | jump to the previous occurance of whatever is under the cursor                       |
-| :/[search term]     | search file (you can use Regex)                                                      |
-| n, N                | while searching, go to next/previous occurance                                       |
-
-| window stuff        |                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------ |
 | zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
 | gt, gT              | switch tabs (forward/back)                                                           |
