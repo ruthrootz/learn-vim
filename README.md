@@ -96,7 +96,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :/[search term]     | search file (you can use Regex)                                                      |
 | n, N                | while searching, go to next/previous occurance                                       |
 
-| window management   |                                                                                      |
+| window stuff        |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | zz                  | center the screen around the current line                                            |
 | crtl-ww             | switch windows (for when you have multiple panels open)                              |
@@ -108,16 +108,16 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 | my-config specific  |                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------ |
-| ctrl-b              | open up NERDTree                                                                     |
-| s                   | open up file in vertical split mode with NERDTree                                    |
-| t                   | open up file in a new tab with NERDTree                                              |
+| ctrl-x              | open up NERDTree                                                                     |
+| ctrl-y              | select an intellisense option from the list                                          |
+| cmd-/               | comment/uncomment selected code                                                      |
 | Zl                  | correct the spelling of the word under the cursor                                    |
 | ZL                  | display a list of spelling suggestions for the word under the cursor                 |
-| ctrl-y              | select an intellisense option from the list                                          |
-| cmd-/               | comment/uncomment out selected code                                                  |
 | \fp                 | find files in specified path                                                         |
 | \ff                 | find files in `cwd`                                                                  |
 | \fb                 | open file browser                                                                    |
+| s                   | open up file in vertical split mode with NERDTree                                    |
+| t                   | open up file in a new tab with NERDTree                                              |
 
 See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
 
