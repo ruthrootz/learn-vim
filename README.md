@@ -135,8 +135,6 @@ Fantastic [video series by ThePrimeagen](https://www.youtube.com/playlist?list=P
 
 For more info on customizing, see [this article](https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd). It's the one I followed to get Vim to look like this:
 
-#
-
 ![my Neovim setup](screenshot.png)
 
 #
