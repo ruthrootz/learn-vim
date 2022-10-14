@@ -21,12 +21,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'puremourning/vimspector'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'sheerun/vim-polyglot'
@@ -40,9 +42,6 @@ call plug#end()
 
 " CONFIG
 
-" open NERDTree automatically
-autocmd VimEnter * NERDTree
-
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -50,7 +49,7 @@ let g:NERDTreeStatusline = ''
 " automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " toggle
-nnoremap <silent> <C-x> :NERDTreeToggle<CR>
+nnoremap <silent> <C-z> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -83,6 +82,65 @@ set splitright
 set splitbelow
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
-" start terminal in insert mode
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
+" nvim-telescope/telescope.nvim
+lua << EOF
+_G.telescope_find_files_in_path = function(path)
+ local _path = path or vim.fn.input("Dir: ", "", "dir")
+ require("telescope.builtin").find_files({search_dirs = {_path}})
+end
+EOF
+lua << EOF
+_G.telescope_live_grep_in_path = function(path)
+ local _path = path or vim.fn.input("Dir: ", "", "dir")
+ require("telescope.builtin").live_grep({search_dirs = {_path}})
+end
+EOF
+
+lua << EOF
+local actions = require('telescope.actions')
+require('telescope').setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<C-q>"] = actions.send_to_qflist
+      }
+    }
+  }
+})
+
+-- You don't need to set any of these options.
+-- IMPORTANT!: this is only a showcase of how you can set default options!
+require("telescope").setup {
+  extensions = {
+    file_browser = {
+      theme = "ivy",
+      -- disables netrw and use telescope-file-browser in its place
+      hijack_netrw = true,
+      mappings = {
+        ["i"] = {
+          -- your custom insert mode mappings
+        },
+        ["n"] = {
+          -- your custom normal mode mappings
+        },
+      },
+    },
+  },
+}
+-- To get telescope-file-browser loaded and working with telescope,
+-- you need to call load_extension, somewhere after setup function:
+require("telescope").load_extension "file_browser"
+EOF
+
+nnoremap <leader><space> :Telescope git_files<CR>
+nnoremap <leader>fp :lua telescope_find_files_in_path()<CR>
+nnoremap <leader>fP :lua telescope_live_grep_in_path()<CR>
+nnoremap <leader>ff :Telescope find_files<CR>
+nnoremap <leader>fb :Telescope file_browser<CR>
+nnoremap <leader>fg :Telescope git_branches<CR>
+"nnoremap <leader>fb :Telescope buffers<CR>"
+nnoremap <leader>fs :Telescope lsp_document_symbols<CR>
+nnoremap <leader>fl :Telescope live_grep<CR>
+nnoremap <leader>FF :Telescope grep_string<CR>
 
