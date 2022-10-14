@@ -113,7 +113,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | s                    | open up file in vertical split mode with NERDTree                                    |
 | t                    | open up file in a new tab with NERDTree                                              |
 
-See this [Vim cheat sheet](https://vim.rtorr.com/) for more.
+See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
 ### .vimrc
 
