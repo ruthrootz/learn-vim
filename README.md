@@ -140,6 +140,14 @@ For more info on customizing, see [this article](https://medium.com/better-progr
 
 #
 
+### debuging
+
+I'm using [vimspector](https://github.com/puremourning/vimspector) for debugging. I'm still getting things set up by following [this doc](https://puremourning.github.io/vimspector-web/)...
+
+After installing the plugin, I got an error that went something like, `Vimspector Unavailable: requires Vim compiled with python (3.6.0+) support.` To solve this issue, I had to install python3 on my machine and then install [this Python package](https://pypi.org/project/neovim/) as specified in [this doc](https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim#a-brief-overview-of-neovim--python).
+
+#
+
 ### C# .NET setup
 .....
 
