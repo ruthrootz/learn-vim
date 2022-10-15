@@ -87,6 +87,9 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | y                    | copy                                                                                 |
 | yy                   | copy current line                                                                    |
 | p, P                 | paste below/above the current line                                                   |
+| vi{, vi(             | select the current block of code between the curly brackets or parentheses           |
+| va{, va(             | select the current block of code, including the brackets/parentheses                 |
+| ya{, ya(             | copy the block of code and the brackets/parentheses                                  |
 | "\*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "\*p                 | paste from system clipboard                                                          |
 | ggVG                 | select all                                                                           |
