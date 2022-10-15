@@ -87,6 +87,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | y                    | copy                                                                                 |
 | yy                   | copy current line                                                                    |
 | p, P                 | paste below/above the current line                                                   |
+| viw                  | select the current workd, no matter where in the word the cursor is                  |
 | vi{, vi(             | select the current block of code between the curly brackets or parentheses           |
 | va{, va(             | select the current block of code, including the brackets/parentheses                 |
 | ya{, ya(             | copy the block of code and the brackets/parentheses                                  |
