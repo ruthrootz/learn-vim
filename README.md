@@ -103,6 +103,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 | my-config specific   |                                                                                      |
 | -------------------- | ------------------------------------------------------------------------------------ |
+| ctrl-c               | copy to system clipboard                                                             |
+| ctrl-v               | paste from system clipboard                                                          |
 | ctrl-x               | open up NERDTree                                                                     |
 | ctrl-y               | select an intellisense option from the list                                          |
 | cmd-/                | comment/uncomment selected code                                                      |
