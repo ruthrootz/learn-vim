@@ -38,6 +38,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'wakatime/vim-wakatime'
 Plug 'preservim/nerdcommenter'
 Plug 'navarasu/onedark.nvim'
+Plug 'folke/todo-comments.nvim'
 call plug#end()
 
 " CONFIG
@@ -53,6 +54,9 @@ nnoremap <silent> <C-z> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
+map <C-c> "+y<CR>
+map <C-v> "+p<CR>
+
 let g:enable_spelunker_vim = 1
 let g:spelunker_check_type = 2
 let g:spelunker_disable_acronym_checking = 1
@@ -62,6 +66,7 @@ let g:spelunker_highlight_type = 2
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+set number relativenumber
 set nospell
 set wrap
 set number
@@ -127,6 +132,15 @@ require("telescope").setup {
 require("telescope").load_extension "file_browser"
 EOF
 
+lua << EOF
+  require("todo-comments").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+EOF
+
+nnoremap <leader>td :TodoQuickFix<CR>
 nnoremap <leader><space> :Telescope git_files<CR>
 nnoremap <leader>fp :lua telescope_find_files_in_path()<CR>
 nnoremap <leader>fP :lua telescope_live_grep_in_path()<CR>
