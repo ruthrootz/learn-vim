@@ -67,6 +67,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | {, }                 | move up/down the file by paragraphs                                                  |
 | 0, $                 | move to the beginning/end of a line                                                  |
 | gg, G                | move to top of file, bottom of file                                                  |
+| [x]G                 | jump to line number x                                                                |
+| [x]j, k              | jump x lines down (j) or up (k)                                                      |
 | i                    | enter insert mode                                                                    |
 | I                    | enter insert mode at the beginning of the current line                               |
 | a                    | enter insert mode after the cursor                                                   |
