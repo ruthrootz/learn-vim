@@ -99,6 +99,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :vsplit term://zsh   | open a (in my case) zsh terminal to the right of the current window                  |
 | :tabnew term://zsh   | open a (in my case) zsh terminal in a new tab                                        |
 | :noh                 | "no highlight", clears highlighting on search results                                |
+| :%s/one/two/g        | replaces all instances of "one" with "two" for all (%) lines                         |
 
 | my-config specific   |                                                                                      |
 | -------------------- | ------------------------------------------------------------------------------------ |
