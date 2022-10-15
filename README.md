@@ -115,10 +115,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | Zl                   | correct the spelling of the word under the cursor                                    |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                 |
 | \fp                  | find files in specified path                                                         |
-| \ff                  | find files in `cwd`                                                                  |
+| \ff                  | find files in `pwd`                                                                  |
 | \fb                  | open file browser                                                                    |
 | s                    | open up file in vertical split mode with NERDTree                                    |
 | t                    | open up file in a new tab with NERDTree                                              |
+| \td                  | open my list of TODOs for the `pwd`                                                  |
 
 See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
