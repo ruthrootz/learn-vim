@@ -67,8 +67,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | {, }                 | move up/down the file by paragraphs                                                  |
 | 0, $                 | move to the beginning/end of a line                                                  |
 | gg, G                | move to top of file, bottom of file                                                  |
-| [x]G                 | jump to line number x                                                                |
-| [x]j, k              | jump x lines down (j) or up (k)                                                      |
+| xG, :x               | jump to line number x                                                                |
+| xj, k                | jump x lines down (j) or up (k)                                                      |
 | i                    | enter insert mode                                                                    |
 | I                    | enter insert mode at the beginning of the current line                               |
 | a                    | enter insert mode after the cursor                                                   |
@@ -77,7 +77,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | esc                  | go back into normal mode                                                             |
 | v                    | enter visual mode so you can select text                                             |
 | shift-v              | select text line-by-line                                                             |
-| :/[search term]      | search file (you can use Regex)                                                      |
+| :/search term        | search file (you can use Regex)                                                      |
 | n, N                 | while searching, go to next/previous occurance                                       |
 | *                    | jump to the next occurance of whatever is under the cursor                           |
 | #                    | jump to the previous occurance of whatever is under the cursor                       |
