@@ -125,14 +125,12 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 | ADVANCED (currently learning) |                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------- |
-| ctrl-u                        | move up half a page*                                                        |
+| ctrl-u                        | move up half a page                                                         |
 | ctrl-d                        | move down half a page                                                       |
 
 See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
 Note: to get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
-
-* Add `set scrolloff=999` to your config file to keep your cursor in the middle of the screen when moving up/down. Much less disorienting.
 
 ### .vimrc
 
