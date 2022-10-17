@@ -132,7 +132,7 @@ See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
 Note: to get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
 
-* Add `set scrolloff=999` to your config file to keep yyour cursor in the middle of the screen when moving up/down. Much less disorienting.
+* Add `set scrolloff=999` to your config file to keep your cursor in the middle of the screen when moving up/down. Much less disorienting.
 
 ### .vimrc
 
