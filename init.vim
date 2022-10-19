@@ -39,6 +39,9 @@ Plug 'wakatime/vim-wakatime'
 Plug 'preservim/nerdcommenter'
 Plug 'navarasu/onedark.nvim'
 Plug 'folke/todo-comments.nvim'
+Plug 'ThePrimeagen/vim-be-good'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " CONFIG
@@ -66,6 +69,20 @@ let g:spelunker_highlight_type = 2
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+let g:lightline = {
+      \ 'colorscheme': 'ayu_mirage',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
+set laststatus=2
+set noshowmode
+set scrolloff=10
 set number relativenumber
 set nospell
 set wrap
