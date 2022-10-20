@@ -129,6 +129,38 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ----------------------------- | --------------------------------------------------------------------------- |
 | ctrl-u                        | move up half a page                                                         |
 | ctrl-d                        | move down half a page                                                       |
+| gi | jump to last insert |
+| gv | jump to last select |
+| gj | go down one visual line, not actual line |
+| cc | |
+| viw | |
+| vi{ | |
+| va{ | |
+| yi{ | |
+| ya{ | |
+| ~ | |
+| ctrl-a | increment int |
+| ctrl-x | decrement int |
+| ctrl-o | |
+| ctrl-i | |
+| % | |
+| ctrl-w-v | |
+| ctrl-w-s | |
+| ctrl-w-l/h/j/k | |
+| =ap | |
+| == | format current line |
+| = | format selected lines |
+| o | in visual mode, moves your cursor between the beginning/end of the selection |
+| yap, dap, vap | yank/delete/select contiguous code (current paragraph) |
+| vip vs vap | a selects the line below the paragraph as well |
+| >4j | indent current line and 4 lines below |
+| q [register name] … q | |
+| @[register name] | apply above recording to current line |
+| 10@[register name] | to apply recording to 10 lines |
+| :normal [some set of keybindings] | apply key bindings to all selected lines |
+| :!sort | use UNIX `sort` command to sort selected lines |
+| :.!jq | format json (not perfect, but mostly works) |
+
 
 See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
