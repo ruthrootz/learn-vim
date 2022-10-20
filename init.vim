@@ -42,6 +42,7 @@ Plug 'folke/todo-comments.nvim'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " CONFIG
@@ -66,6 +67,11 @@ let g:spelunker_disable_acronym_checking = 1
 let g:spelunker_disable_email_checking = 1
 let g:spelunker_disable_uri_checking = 1
 let g:spelunker_highlight_type = 2
+
+" VimWiki
+let g:vimwiki_syntax = 'markdown'
+let g:vimwiki_ext = '.md'
+let g:vimwiki_automatic_nested_syntaxes = 1
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -93,10 +99,13 @@ set autoindent
 set cursorline
 set encoding=UTF-8
 set guifont=DroidSansMono_Nerd_Font:h11
+set nocompatible
 syntax on
+filetype plugin on
+
 let g:onedark_config = {
-    \ 'style': 'deep',
-\}
+      \ 'style': 'deep',
+      \}
 colorscheme onedark
 
 " open new split panes to right and below
