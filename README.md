@@ -122,6 +122,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | s                    | open up file in vertical split mode with NERDTree                                    |
 | t                    | open up file in a new tab with NERDTree                                              |
 | \td                  | open my list of TODOs for the `pwd`                                                  |
+| \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                         |
 
 | ADVANCED (currently learning) |                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------- |
