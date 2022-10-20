@@ -158,7 +158,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | q [register name] … q | |
 | @[register name] | apply above recording to current line |
 | 10@[register name] | to apply recording to 10 lines |
-| ----------------------------- | --------------------------------------------------------------------------- |
 | :normal [some set of keybindings] | apply key bindings to all selected lines |
 | :!sort | use UNIX `sort` command to sort selected lines |
 | :.!jq | format json (not perfect, but mostly works) |
