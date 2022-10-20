@@ -119,6 +119,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \fp                  | find files in specified path                                                         |
 | \ff                  | find files in `pwd`                                                                  |
 | \fb                  | open file browser                                                                    |
+| \fl                  | search files for text                                                                |
 | s                    | open up file in vertical split mode with NERDTree                                    |
 | t                    | open up file in a new tab with NERDTree                                              |
 | \td                  | open my list of TODOs for the `pwd`                                                  |
