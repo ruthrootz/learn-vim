@@ -72,7 +72,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ggVG                 | select all                                                                           |
 | xG, :x               | jump to line number x                                                                |
 | xj, k                | jump x lines down (j) or up (k)                                                      |
-| -------------------- | ------------------------------------------------------------------------------------ |
+|                      |                                                                                      |
 | i                    | enter insert mode                                                                    |
 | I                    | enter insert mode at the beginning of the current line                               |
 | a                    | enter insert mode after the cursor                                                   |
@@ -84,7 +84,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | n, N                 | while searching, go to next/previous occurance                                       |
 | *                    | jump to the next occurance of whatever is under the cursor                           |
 | #                    | jump to the previous occurance of whatever is under the cursor                       |
-| -------------------- | ------------------------------------------------------------------------------------ |
+|                      |                                                                                      |
 | u                    | undo                                                                                 |
 | ctrl-r               | redo                                                                                 |
 | x                    | delete the character under the cursor                                                |
@@ -95,7 +95,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | p, P                 | paste below/above the current line                                                   |
 | "\*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)    |
 | "\*p                 | paste from system clipboard                                                          |
-| -------------------- | ------------------------------------------------------------------------------------ |
+|                      |                                                                                      |
 | viw                  | select the current word, no matter where in the word the cursor is                   |
 | vi{, vi(             | select the current block of code between the curly brackets or parentheses           |
 | va{, va(             | select the current block of code, including the brackets/parentheses                 |
@@ -105,11 +105,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | == | format current line |
 | = | format selected lines |
 | % | |
-| -------------------- | ------------------------------------------------------------------------------------ |
+|                      |                                                                                      |
 | ~ | |
 | ctrl-a | increment int |
 | ctrl-x | decrement int |
-| -------------------- | ------------------------------------------------------------------------------------ |
+|                      |                                                                                      |
 | :w                   | save the current file                                                                |
 | :q                   | close the current window                                                             |
 | :/[search term]      | search file with Regex                                                               |
