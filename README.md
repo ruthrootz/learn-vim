@@ -125,24 +125,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :noh                 | "no highlight", clears highlighting on search results                                |
 | :%s/[one]/[two]/g    | replaces all instances of "one" with "two" for all (%) lines                         |
 
-| my-config specific   |                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| ctrl-c               | copy to system clipboard                                                             |
-| ctrl-v               | paste from system clipboard                                                          |
-| ctrl-y               | select an intellisense option from the list                                          |
-| cmd-/                | comment/uncomment selected code                                                      |
-| Zl                   | correct the spelling of the word under the cursor                                    |
-| ZL                   | display a list of spelling suggestions for the word under the cursor                 |
-| \x                   | open up NERDTree                                                                     |
-| \fp                  | find files in specified path                                                         |
-| \ff                  | find files in `pwd`                                                                  |
-| \fb                  | open file browser                                                                    |
-| \fl                  | search files for text                                                                |
-| s                    | open up file in vertical split mode with NERDTree                                    |
-| t                    | open up file in a new tab with NERDTree                                              |
-| \td                  | open my list of TODOs for the `pwd`                                                  |
-| \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                         |
-
 | ADVANCED (currently learning) |                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------- |
 | ctrl-o | |
@@ -162,6 +144,23 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :!sort | use UNIX `sort` command to sort selected lines |
 | :.!jq | format json (not perfect, but mostly works) |
 
+| my-config specific   |                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| ctrl-c               | copy to system clipboard                                                             |
+| ctrl-v               | paste from system clipboard                                                          |
+| ctrl-y               | select an intellisense option from the list                                          |
+| cmd-/                | comment/uncomment selected code                                                      |
+| Zl                   | correct the spelling of the word under the cursor                                    |
+| ZL                   | display a list of spelling suggestions for the word under the cursor                 |
+| \x                   | open up NERDTree                                                                     |
+| \fp                  | find files in specified path                                                         |
+| \ff                  | find files in `pwd`                                                                  |
+| \fb                  | open file browser                                                                    |
+| \fl                  | search files for text                                                                |
+| s                    | open up file in vertical split mode with NERDTree                                    |
+| t                    | open up file in a new tab with NERDTree                                              |
+| \td                  | open my list of TODOs for the `pwd`                                                  |
+| \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                         |
 
 See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
