@@ -129,11 +129,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | -------------------- | ------------------------------------------------------------------------------------ |
 | ctrl-c               | copy to system clipboard                                                             |
 | ctrl-v               | paste from system clipboard                                                          |
-| ctrl-x               | open up NERDTree                                                                     |
 | ctrl-y               | select an intellisense option from the list                                          |
 | cmd-/                | comment/uncomment selected code                                                      |
 | Zl                   | correct the spelling of the word under the cursor                                    |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                 |
+| \x                   | open up NERDTree                                                                     |
 | \fp                  | find files in specified path                                                         |
 | \ff                  | find files in `pwd`                                                                  |
 | \fb                  | open file browser                                                                    |
