@@ -47,6 +47,8 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
+
+
 | learn these first    |                                                                                      |
 | -------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l           | move around in the file (right, down, up, left)                                      |
@@ -60,6 +62,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | p, P                 | paste below/above the current line                                                   |
 | :w                   | save the current file                                                                |
 | :q                   | close the current window                                                             |
+
+
 
 | keybindings/commands   |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
@@ -126,6 +130,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :noh                   | "no highlight", clears highlighting on search results                                |
 | :%s/[one]/[two]/g      | replaces all instances of "one" with "two" for all (%) lines                         |
 
+
+
 | ADVANCED (currently learning) |                                                                               |
 | ----------------------------- | ----------------------------------------------------------------------------- |
 | ctrl-o | |
@@ -144,6 +150,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :normal [some set of keybindings] | apply key bindings to all selected lines |
 | :!sort | use UNIX `sort` command to sort selected lines |
 | :.!jq | format json (not perfect, but mostly works) |
+
+
 
 | my-config specific   |                                                                                        |
 | -------------------- | -------------------------------------------------------------------------------------- |
