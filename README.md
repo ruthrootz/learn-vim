@@ -47,61 +47,61 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| learn these first      |                                                                                      |
+| learn these first    |                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l           | move around in the file (right, down, up, left)                                      |
+| i                    | enter insert mode                                                                    |
+| esc                  | go back into normal mode                                                             |
+| v                    | enter visual mode so you can select text                                             |
+| shift-v              | select text line-by-line                                                             |
+| u                    | undo                                                                                 |
+| ctrl-r               | redo                                                                                 |
+| y                    | copy                                                                                 |
+| p, P                 | paste below/above the current line                                                   |
+| :w                   | save the current file                                                                |
+| :q                   | close the current window                                                             |
+
+| keybindings/commands   |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l             | move around in the file (right, down, up, left)                                      |
+| {, }                   | move up/down the file by paragraphs                                                  |
+| ctrl-u                 | move up half a page                                                                  |
+| ctrl-d                 | move down half a page                                                                |
+| 0, $                   | move to the beginning/end of a line                                                  |
+| gg, G                  | move to top of file, bottom of file                                                  |
+| ggVG                   | select all                                                                           |
+| xG, :x                 | jump to line number x                                                                |
+| xj, k                  | jump x lines down (j) or up (k)                                                      |
+|                        |                                                                                      |
 | i                      | enter insert mode                                                                    |
+| I                      | enter insert mode at the beginning of the current line                               |
+| a                      | enter insert mode after the cursor                                                   |
+| A                      | enter insert mode at the end of the current line                                     |
+| o, O                   | open a new line below/above the current line and enter insert mode                   |
 | esc                    | go back into normal mode                                                             |
 | v                      | enter visual mode so you can select text                                             |
 | shift-v                | select text line-by-line                                                             |
+| n, N                   | while searching, go to next/previous occurance                                       |
+| *                      | jump to the next occurance of whatever is under the cursor                           |
+| #                      | jump to the previous occurance of whatever is under the cursor                       |
+|                        |                                                                                      |
 | u                      | undo                                                                                 |
 | ctrl-r                 | redo                                                                                 |
+| x                      | delete the character under the cursor                                                |
+| dd                     | delete current line                                                                  |
+| dw                     | delete current word                                                                  |
 | y                      | copy                                                                                 |
+| yy                     | copy current line                                                                    |
 | p, P                   | paste below/above the current line                                                   |
-| :w                     | save the current file                                                                |
-| :q                     | close the current window                                                             |
-
-| keybindings/commands.  |                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------- |
-| h, j, k, l             | move around in the file (right, down, up, left)                                        |
-| {, }                   | move up/down the file by paragraphs                                                    |
-| ctrl-u                 | move up half a page                                                                    |
-| ctrl-d               | move down half a page                                                                  |
-| 0, $                 | move to the beginning/end of a line                                                    |
-| gg, G                | move to top of file, bottom of file                                                    |
-| ggVG                 | select all                                                                             |
-| xG, :x               | jump to line number x                                                                  |
-| xj, k                | jump x lines down (j) or up (k)                                                        |
-|                      |                                                                                        |
-| i                    | enter insert mode                                                                      |
-| I                    | enter insert mode at the beginning of the current line                                 |
-| a                    | enter insert mode after the cursor                                                     |
-| A                    | enter insert mode at the end of the current line                                       |
-| o, O                 | open a new line below/above the current line and enter insert mode                     |
-| esc                  | go back into normal mode                                                               |
-| v                    | enter visual mode so you can select text                                               |
-| shift-v              | select text line-by-line                                                               |
-| n, N                 | while searching, go to next/previous occurance                                         |
-| *                    | jump to the next occurance of whatever is under the cursor                             |
-| #                    | jump to the previous occurance of whatever is under the cursor                         |
-|                      |                                                                                        |
-| u                    | undo                                                                                   |
-| ctrl-r               | redo                                                                                   |
-| x                    | delete the character under the cursor                                                  |
-| dd                   | delete current line                                                                    |
-| dw                   | delete current word                                                                    |
-| y                    | copy                                                                                   |
-| yy                   | copy current line                                                                      |
-| p, P                 | paste below/above the current line                                                     |
-| "\*y                 | copy selected text to system clipboard (so you can paste outside of the terminal)      |
-| "\*p                 | paste from system clipboard                                                            |
-|                      |                                                                                        |
-| viw                  | select the current word, no matter where in the word the cursor is                     |
-| vi{, vi(             | select the current block of code between the curly brackets or parentheses             |
-| va{, va(             | select the current block of code, including the brackets/parentheses                   |
-| ya{, ya(             | copy the current block of code and the brackets/parentheses                            |
-| da{ or ca{           | delete the current block of code and the brackets/parentheses                          |
-| =ap                  | format the current paragraph                                                           |
+| "\*y                   | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "\*p                   | paste from system clipboard                                                          |
+|                        |                                                                                      |
+| viw                    | select the current word, no matter where in the word the cursor is                   |
+| vi{, vi(               | select the current block of code between the curly brackets or parentheses           |
+| va{, va(               | select the current block of code, including the brackets/parentheses                 |
+| ya{, ya(               | copy the current block of code and the brackets/parentheses                          |
+| da{ or ca{             | delete the current block of code and the brackets/parentheses                        |
+| =ap                    | format the current paragraph                                                         |
 | == | format current line |
 | = | format selected lines |
 | % | |
