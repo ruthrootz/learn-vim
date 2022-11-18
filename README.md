@@ -47,25 +47,25 @@ Vim is a text editor that runs in a CLI. You can't use a mouse with Vim. All nav
 
 Now it's time to learn some handy commands that you can use in normal mode. Being good at these is what makes Vim folks so fast at writing code. These are basic commands, roughly in the order I learned them.
 
-| learn these first    |                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| h, j, k, l           | move around in the file (right, down, up, left)                                      |
-| i                    | enter insert mode                                                                    |
-| esc                  | go back into normal mode                                                             |
-| v                    | enter visual mode so you can select text                                             |
-| shift-v              | select text line-by-line                                                             |
-| u                    | undo                                                                                 |
-| ctrl-r               | redo                                                                                 |
-| y                    | copy                                                                                 |
-| p, P                 | paste below/above the current line                                                   |
-| :w                   | save the current file                                                                |
-| :q                   | close the current window                                                             |
+| learn these first      |                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------ |
+| h, j, k, l             | move around in the file (right, down, up, left)                                      |
+| i                      | enter insert mode                                                                    |
+| esc                    | go back into normal mode                                                             |
+| v                      | enter visual mode so you can select text                                             |
+| shift-v                | select text line-by-line                                                             |
+| u                      | undo                                                                                 |
+| ctrl-r                 | redo                                                                                 |
+| y                      | copy                                                                                 |
+| p, P                   | paste below/above the current line                                                   |
+| :w                     | save the current file                                                                |
+| :q                     | close the current window                                                             |
 
-| keybindings/commands |                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------- |
-| h, j, k, l           | move around in the file (right, down, up, left)                                        |
-| {, }                 | move up/down the file by paragraphs                                                    |
-| ctrl-u               | move up half a page                                                                    |
+| keybindings/commands.  |                                                                                        |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| h, j, k, l             | move around in the file (right, down, up, left)                                        |
+| {, }                   | move up/down the file by paragraphs                                                    |
+| ctrl-u                 | move up half a page                                                                    |
 | ctrl-d               | move down half a page                                                                  |
 | 0, $                 | move to the beginning/end of a line                                                    |
 | gg, G                | move to top of file, bottom of file                                                    |
