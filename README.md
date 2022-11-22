@@ -173,7 +173,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \td                  | open my list of TODOs for the `pwd`                                                    |
 | \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                           |
 | ctrl-]               | jump to definition (see note below)                                                    |
-| F8                   | toggle project structure map (courtesy of `taglist.vim` plugin)                       |
+| F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
 note: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping.
 
