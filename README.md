@@ -172,10 +172,10 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | t                    | open up file in a new tab with NERDTree                                                |
 | \td                  | open my list of TODOs for the `pwd`                                                    |
 | \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                           |
-| ctrl-]               | jump to definition (see note below)                                                    |
+| F12                  | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
-note: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping.
+**note**: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping. I then remapped `ctrl-]` to `F12` to use that popular shortcut for go to definition.
 
 See this [Vim cheat sheet](https://devhints.io/vim) for more.
 
