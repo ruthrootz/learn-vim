@@ -177,9 +177,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 **note**: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping. I then remapped `ctrl-]` to `F12` to use that popular shortcut for go to definition.
 
-See this [Vim cheat sheet](https://devhints.io/vim) for more.
-
-Note: to get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
+**another note**: To get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
 
 ### .vimrc
 
