@@ -8,6 +8,9 @@
 
 [keybindings / commands](#keybindings--commands)
 - [learn these first](#learn-these-first)
+- [the core commands](#the-core-commands)
+- [advanced](#advanced)
+- [my-config specific](#my-config-specific)
 
 [.vimrc](#vimrc)
 
@@ -67,7 +70,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-#### core commands
+#### the core commands
 |                        |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l             | move around in the file (right, down, up, left)                                      |
