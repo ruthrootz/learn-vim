@@ -43,6 +43,8 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
+Plug 'vim-scripts/taglist.vim'
+Plug 'eandrju/cellular-automaton.nvim'
 call plug#end()
 
 " CONFIG
@@ -54,13 +56,15 @@ let g:NERDTreeStatusline = ''
 " automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " toggle
-nnoremap <silent> <C-z> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>z :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
 map <C-c> "+y<CR>
 map <C-v> "+p<CR>
+map <F12> <C-]>
 
+:let g:Tlist_WinWidth=50
 let g:enable_spelunker_vim = 1
 let g:spelunker_check_type = 2
 let g:spelunker_disable_acronym_checking = 1
@@ -160,9 +164,12 @@ EOF
 
 lua << EOF
   require("todo-comments").setup {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
+    keywords = {
+      QUESTION = {
+        icon = "？",
+        color = "hint"
+      }
+    }
   }
 EOF
 
@@ -177,4 +184,5 @@ nnoremap <leader>fg :Telescope git_branches<CR>
 nnoremap <leader>fs :Telescope lsp_document_symbols<CR>
 nnoremap <leader>fl :Telescope live_grep<CR>
 nnoremap <leader>FF :Telescope grep_string<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
 
