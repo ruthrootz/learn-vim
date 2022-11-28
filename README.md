@@ -7,6 +7,7 @@
 [modes](#modes)
 
 [keybindings / commands](#keybindings--commands)
+- [learn these first](#learn-these-first)
 
 [.vimrc](#vimrc)
 
@@ -49,7 +50,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-| learn these first    |                                                                                      |
+#### learn these first
+|                      |                                                                                      |
 | -------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l           | move around in the file (right, down, up, left)                                      |
 | i                    | enter insert mode                                                                    |
@@ -65,7 +67,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-| keybindings/commands   |                                                                                      |
+#### core commands
+|                        |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l             | move around in the file (right, down, up, left)                                      |
 | {, }                   | move up/down the file by paragraphs                                                  |
@@ -132,7 +135,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-| ADVANCED (currently learning) |                                                                               |
+#### advanced
+|                               |                                                                               |
 | ----------------------------- | ----------------------------------------------------------------------------- |
 | ctrl-o | |
 | ctrl-i | |
@@ -153,7 +157,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-| my-config specific   |                                                                                        |
+#### my-config specific
+|                      |                                                                                        |
 | -------------------- | -------------------------------------------------------------------------------------- |
 | ctrl-c               | copy to system clipboard                                                               |
 | ctrl-v               | paste from system clipboard                                                            |
