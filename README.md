@@ -148,7 +148,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | gj | go down one visual line, not actual line |
 | cc | delete line and enter input mode |
 | yap, dap, cap, vap | yank/delete/select contiguous code (current paragraph) |
-| vip vs vap | a selects the line below the paragraph as well |
+| vip vs. vap | vap selects the line below the paragraph as well |
 | o | in visual mode, moves your cursor between the beginning/end of the selection |
 | >4j | indent current line and 4 lines below |
 | q [register name] … q | |
