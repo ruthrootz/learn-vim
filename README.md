@@ -141,12 +141,12 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 #### advanced
 |                               |                                                                               |
 | ----------------------------- | ----------------------------------------------------------------------------- |
-| ctrl-o | |
-| ctrl-i | |
+| ctrl-o | jump to the previous place the cursor was at |
+| ctrl-i | jump forward to a more recent place the cursor was at |
 | gi | jump to last insert |
 | gv | jump to last select |
 | gj | go down one visual line, not actual line |
-| cc | |
+| cc | delete line and enter input mode |
 | yap, dap, cap, vap | yank/delete/select contiguous code (current paragraph) |
 | vip vs vap | a selects the line below the paragraph as well |
 | o | in visual mode, moves your cursor between the beginning/end of the selection |
