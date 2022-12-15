@@ -68,8 +68,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :w                   | save the current file                                                                |
 | :q                   | close the current window                                                             |
 
-| :x or ZZ             | save and then close the current window                                               |
-
 
 
 #### the core commands
@@ -124,6 +122,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 |                        |                                                                                      |
 | :w                     | save the current file                                                                |
 | :q                     | close the current window                                                             |
+| :q!                    | close the current window without saving changes                                      |
+| :x or ZZ               | save and then close the current window                                               |
 | :/[search term]        | search file with Regex                                                               |
 | zz                     | center the screen around the current line                                            |
 | crtl-ww                | switch windows (for when you have multiple panels open)                              |
