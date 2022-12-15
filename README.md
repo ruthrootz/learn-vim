@@ -169,7 +169,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | cmd-/                | comment/uncomment selected code                                                        |
 | Zl                   | correct the spelling of the word under the cursor                                      |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                   |
-| \x                   | open up NERDTree                                                                       |
+| \z                   | open up NERDTree                                                                       |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
 | \fp                  | find files in specified path                                                           |
