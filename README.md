@@ -172,17 +172,17 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | cmd-/                | comment/uncomment selected code                                                        |
 | Zl                   | correct the spelling of the word under the cursor                                      |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                   |
-| \z                   | open up NERDTree                                                                       |
+| <leader>z            | open up NERDTree                                                                       |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
-| \fp                  | find files in specified path                                                           |
-| \ff                  | find files in `pwd`                                                                    |
-| \fb                  | open file browser                                                                      |
-| \fl                  | search files for text                                                                  |
+| <leader>fp          | find files in specified path                                                           |
+| <leader>ff                  | find files in `pwd`                                                                    |
+| <leader>fb                  | open file browser                                                                      |
+| <leader>fl                  | search files for text                                                                  |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
-| \td                  | open my list of TODOs for the `pwd`                                                    |
-| \ww                  | open my [VimWiki](http://vimwiki.github.io/)                                           |
+| <leader>td                  | open my list of TODOs for the `pwd`                                                    |
+| <leader>ww                  | open my [VimWiki](http://vimwiki.github.io/)                                           |
 | F12                  | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
