@@ -49,6 +49,9 @@ call plug#end()
 
 " CONFIG
 
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
