@@ -124,8 +124,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :q                     | close the current window                                                             |
 | :q!                    | close the current window without saving changes                                      |
 | :x or ZZ               | save and then close the current window                                               |
-| :/[search term]        | search file with Regex                                                               |
 | zz                     | center the screen around the current line                                            |
+| /[search term]         | search file with Regex                                                               |
 | ctrl-ww                | switch windows (for when you have multiple panels open)                              |
 | ctrl-wq                | close current window or tab                                                          |
 | ctrl-wv                | open a new vertically split window                                                   |
