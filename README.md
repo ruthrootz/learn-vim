@@ -103,8 +103,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | y                      | copy                                                                                 |
 | yy                     | copy current line                                                                    |
 | p, P                   | paste below/above the current line                                                   |
-| "\*y                   | copy selected text to system clipboard (so you can paste outside of the terminal)    |
-| "\*p                   | paste from system clipboard                                                          |
+| "*y                    | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "*p                    | paste from system clipboard                                                          |
 |                        |                                                                                      |
 | viw                    | select the current word, no matter where in the word the cursor is                   |
 | vi{, vi(               | select the current block of code between the curly brackets or parentheses           |
@@ -175,14 +175,14 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | <leader>z            | open up NERDTree                                                                       |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
-| <leader>fp          | find files in specified path                                                           |
-| <leader>ff                  | find files in `pwd`                                                                    |
-| <leader>fb                  | open file browser                                                                      |
-| <leader>fl                  | search files for text                                                                  |
+| <leader>fp           | find files in specified path                                                           |
+| <leader>ff           | find files in `pwd`                                                                    |
+| <leader>fb           | open file browser                                                                      |
+| <leader>fl           | search files for text                                                                  |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
-| <leader>td                  | open my list of TODOs for the `pwd`                                                    |
-| <leader>ww                  | open my [VimWiki](http://vimwiki.github.io/)                                           |
+| <leader>td           | open my list of TODOs for the `pwd`                                                    |
+| <leader>ww           | open my [VimWiki](http://vimwiki.github.io/)                                           |
 | F12                  | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
@@ -198,7 +198,9 @@ The weirdest thing about Vim for most people is that it runs in a terminal. It's
 
 Advice for MacOS users: To get [NERDTree](https://github.com/preservim/nerdtree) to work with the [devicons](https://github.com/ryanoasis/vim-devicons) plugin, I had to install a ["nerd font"](https://www.nerdfonts.com/) onto my computer. For MacOS all you have to do is download the nerd font of your choice, install it (which will add it to Font Book) and then make sure your terminal app uses that font for non-unicode characters. (You can't use MacOS's default Terminal app if you want cool colors, fyi, since Terminal doesn't allow more than a handful of different colors. I use iTerm2.)
 
-One extra thing I did: In System Preferences I remapped my caps lock key to be my escape key so it's easier/faster to exit insert/visual mode.
+When you see <leader> in the tables above, it means, in my case, spacebar. You can set the leader key to be any unused key.
+
+In System Preferences I remapped my caps lock key to be my escape key so it's easier/faster to exit insert/visual mode.
 
 #
 
