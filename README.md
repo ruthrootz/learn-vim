@@ -114,7 +114,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | =ap                    | format the current paragraph                                                         |
 | == | format current line |
 | = | format selected lines |
-| % | |
+| % | when on bracket, parenthesis, etc. jump to its partner |
 |                        |                                                                                      |
 | ~                      | swap the case on the current character                                               |
 | ctrl-a                 | increment int                                                                        |
