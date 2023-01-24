@@ -111,10 +111,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | va{, va(               | select the current block of code, including the brackets/parentheses                 |
 | ya{, ya(               | copy the current block of code and the brackets/parentheses                          |
 | da{ or ca{             | delete the current block of code and the brackets/parentheses                        |
+| =G                     | when at the top of the file, format the entire file                                  |
 | =ap                    | format the current paragraph                                                         |
-| == | format current line |
-| = | format selected lines |
-| % | when on bracket, parenthesis, etc. jump to its partner |
+| ==                     | format current line                                                                  |
+| =                      | format selected lines                                                                |
+| %                      | when on bracket/parenthesis jump to its partner                                      |
 |                        |                                                                                      |
 | ~                      | swap the case on the current character                                               |
 | ctrl-a                 | increment int                                                                        |
