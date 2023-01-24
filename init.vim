@@ -1,8 +1,8 @@
 " install vimplug if not installed
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
+  autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
 endif
 
 " enable true color in terminal
@@ -52,6 +52,7 @@ call plug#end()
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+let g:NERDTreeWinSize=50
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -67,7 +68,8 @@ map <C-c> "+y<CR>
 map <C-v> "+p<CR>
 map <F12> <C-]>
 
-:let g:Tlist_WinWidth=50
+let g:Tlist_WinWidth=50
+
 let g:enable_spelunker_vim = 1
 let g:spelunker_check_type = 2
 let g:spelunker_disable_acronym_checking = 1
@@ -82,6 +84,11 @@ let g:vimwiki_automatic_nested_syntaxes = 1
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+let g:onedark_config = {
+      \ 'style': 'deep',
+      \}
+colorscheme onedark
+
 let g:lightline = {
       \ 'colorscheme': 'ayu_mirage',
       \ 'active': {
@@ -93,6 +100,9 @@ let g:lightline = {
       \ },
       \ }
 
+set linebreak
+set textwidth=0
+set wrapmargin=0
 set laststatus=2
 set noshowmode
 set scrolloff=10
@@ -107,41 +117,37 @@ set cursorline
 set encoding=UTF-8
 set guifont=DroidSansMono_Nerd_Font:h11
 set nocompatible
-syntax on
-filetype plugin on
-
-let g:onedark_config = {
-      \ 'style': 'deep',
-      \}
-colorscheme onedark
-
 " open new split panes to right and below
 set splitright
 set splitbelow
+
+syntax on
+filetype plugin on
+
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
 
 " nvim-telescope/telescope.nvim
 lua << EOF
 _G.telescope_find_files_in_path = function(path)
- local _path = path or vim.fn.input("Dir: ", "", "dir")
- require("telescope.builtin").find_files({search_dirs = {_path}})
+local _path = path or vim.fn.input("Dir: ", "", "dir")
+require("telescope.builtin").find_files({search_dirs = {_path}})
 end
 EOF
 lua << EOF
 _G.telescope_live_grep_in_path = function(path)
- local _path = path or vim.fn.input("Dir: ", "", "dir")
- require("telescope.builtin").live_grep({search_dirs = {_path}})
+local _path = path or vim.fn.input("Dir: ", "", "dir")
+require("telescope.builtin").live_grep({search_dirs = {_path}})
 end
 EOF
 lua << EOF
 local actions = require('telescope.actions')
 require('telescope').setup({
-  defaults = {
-    mappings = {
-      i = {
-        ["<C-q>"] = actions.send_to_qflist
-      }
+defaults = {
+  mappings = {
+    i = {
+      ["<C-q>"] = actions.send_to_qflist
+    }
     }
   }
 })
@@ -155,9 +161,9 @@ require("telescope").setup {
       hijack_netrw = true,
       mappings = {
         ["i"] = {
-        },
+          },
         ["n"] = {
-        },
+          },
       },
     },
   },
@@ -166,12 +172,12 @@ require("telescope").load_extension "file_browser"
 EOF
 
 lua << EOF
-  require("todo-comments").setup {
-    keywords = {
-      QUESTION = {
-        icon = "？",
-        color = "hint"
-      }
+require("todo-comments").setup {
+  keywords = {
+    QUESTION = {
+      icon = "？",
+      color = "hint"
+    }
     }
   }
 EOF
