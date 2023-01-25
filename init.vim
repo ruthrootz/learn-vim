@@ -52,7 +52,7 @@ call plug#end()
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-let g:NERDTreeWinSize=50
+let g:NERDTreeWinSize=40
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
