@@ -134,6 +134,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ctrl-w then h, j, k, l | move to the next window in the x direction, where x is h, j, k, or l                 |
 | gt, gT                 | switch tabs (forward/back)                                                           |
 | #gt                    | switch to tab number #                                                               |
+| :enew                  | open an empty, blank buffer                                                          |
 | :term                  | open a terminal window (replaces current window)                                     |
 | :vsplit term://zsh     | open a (in my case) zsh terminal to the right of the current window                  |
 | :tabnew term://zsh     | open a (in my case) zsh terminal in a new tab                                        |
