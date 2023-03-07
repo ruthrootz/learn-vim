@@ -157,7 +157,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | o | in visual mode, moves your cursor between the beginning/end of the selection |
 | >>, << | indent/undent current selection |
 | >4j | indent current line and 4 lines below |
-| q [register name] … q | |
+| q or q [register name] | start/stop recording |
 | @[register name] | apply above recording to current line |
 | 10@[register name] | to apply recording to 10 lines |
 | :normal [some set of keybindings] | apply key bindings to all selected lines |
