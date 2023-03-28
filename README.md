@@ -179,6 +179,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | <leader>z            | open up NERDTree                                                                       |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
+| <leader>p            | replace currently selected text with default register without yanking it               |
 | <leader>fp           | find files in specified path                                                           |
 | <leader>ff           | find files in `pwd`                                                                    |
 | <leader>fb           | open file browser                                                                      |
