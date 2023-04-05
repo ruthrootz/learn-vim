@@ -107,9 +107,9 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | "*p                    | paste from system clipboard                                                          |
 |                        |                                                                                      |
 | viw                    | select the current word, no matter where in the word the cursor is                   |
-| vi{, vi(               | select the current block of code between the curly brackets or parentheses           |
-| va{, va(               | select the current block of code, including the brackets/parentheses                 |
-| ya{, ya(               | copy the current block of code and the brackets/parentheses                          |
+| vi{ or vi(             | select the current block of code between the curly brackets or parentheses           |
+| va{ or va(             | select the current block of code, including the brackets/parentheses                 |
+| ya{ or ya(             | copy the current block of code and the brackets/parentheses                          |
 | da{ or ca{             | delete the current block of code and the brackets/parentheses                        |
 | =G                     | when at the top of the file, format the entire file                                  |
 | =ap                    | format the current paragraph                                                         |
@@ -132,6 +132,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ctrl-wv                | open a new vertically split window                                                   |
 | ctrl-ws                | open a new horizontally split window                                                 |
 | ctrl-w then h, j, k, l | move to the next window in the x direction, where x is h, j, k, or l                 |
+| ctrl-w then ctrl-r     | rotate windows                                                                       |
 | gt, gT                 | switch tabs (forward/back)                                                           |
 | #gt                    | switch to tab number #                                                               |
 | :tabm [n]              | move the current tab into the nth position (note: tabs are zero-indexed              |
