@@ -196,6 +196,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 **another note**: To get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
 
+#
+
 ### .vimrc
 
 The weirdest thing about Vim for most people is that it runs in a terminal. It's boring and ugly! That's why you customize the heck out of it. My setup literally looks like my VSCode window, except that it's faster to launch and faster to code in. You customize Vim by editing the `.vimrc` file that lives in your home directory. If it's not there, simply create a file with the name `.vimrc`. I'll include [my config file](https://github.com/ruthrootz/learn-vim/blob/main/init.vim) in this repo so you can get a taste. (For Neovim the config file is called `init.vim` and lives in `~/.config/nvim/`.) Having this config file makes it incredibly easy to set up your environment on a different computer.
