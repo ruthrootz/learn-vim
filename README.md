@@ -8,7 +8,7 @@
 
 [keybindings / commands](#keybindings--commands)
 - [learn these first](#learn-these-first)
-- [the core commands](#the-core-commands)
+- [core commands](#core-commands)
 - [advanced](#advanced)
 - [my-config specific](#my-config-specific)
 
@@ -70,7 +70,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 
 
 
-#### the core commands
+#### core commands
 |                        |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | h, j, k, l             | move around in the file (right, down, up, left)                                      |
@@ -127,6 +127,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :x or ZZ               | save and then close the current window                                               |
 | zz                     | center the screen around the current line                                            |
 | /[search term]         | search file with Regex                                                               |
+| :noh                   | "no highlight", clears highlighting on search results                                |
+| :%s/[one]/[two]/g      | replaces all instances of "one" with "two" for all (%) lines                         |
 | ctrl-ww                | switch windows (for when you have multiple panels open)                              |
 | ctrl-wq                | close current window or tab                                                          |
 | ctrl-wv                | open a new vertically split window                                                   |
@@ -140,8 +142,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | :term                  | open a terminal window (replaces current window)                                     |
 | :vsplit term://zsh     | open a (in my case) zsh terminal to the right of the current window                  |
 | :tabnew term://zsh     | open a (in my case) zsh terminal in a new tab                                        |
-| :noh                   | "no highlight", clears highlighting on search results                                |
-| :%s/[one]/[two]/g      | replaces all instances of "one" with "two" for all (%) lines                         |
 
 
 
