@@ -180,13 +180,13 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | <leader>z            | open up NERDTree                                                                       |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
-| <leader>p            | replace currently selected text with default register without yanking it               |
-| <leader>fp           | find files in specified path                                                           |
-| <leader>ff           | find files in `pwd`                                                                    |
-| <leader>fb           | open file browser                                                                      |
-| <leader>fl           | search files for text                                                                  |
-| <leader>h            | remove highlights                                                                      |
-| <leader>g            | open [vimagit](https://github.com/jreybert/vimagit) window                             |
+| \<leader>p           | replace currently selected text with default register without yanking it               |
+| \<leader>fp          | find files in specified path                                                           |
+| \<leader>ff          | find files in `pwd`                                                                    |
+| \<leader>fb          | open file browser                                                                      |
+| \<leader>fl          | search files for text                                                                  |
+| \<leader>h           | remove highlights                                                                      |
+| \<leader>g           | open [vimagit](https://github.com/jreybert/vimagit) window                             |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
 | <leader>td           | open my list of TODOs for the `pwd`                                                    |
