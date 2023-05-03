@@ -17,7 +17,6 @@ endif
 
 " PLUG
 call plug#begin("~/.vim/plugged")
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -26,7 +25,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'puremourning/vimspector'
 Plug 'leafgarland/typescript-vim'
@@ -45,14 +43,21 @@ Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/taglist.vim'
 Plug 'eandrju/cellular-automaton.nvim'
+Plug 'jreybert/vimagit'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " CONFIG
 
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-let g:NERDTreeWinSize=40
+" replace currently selected text with default register without yanking it
+vnoremap <leader>p "_dP
+
+let g:NERDTreeWinSize=35
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -120,6 +125,7 @@ set nocompatible
 " open new split panes to right and below
 set splitright
 set splitbelow
+set ignorecase smartcase
 
 syntax on
 filetype plugin on
@@ -182,6 +188,8 @@ require("todo-comments").setup {
   }
 EOF
 
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>g :Magit<CR> :vertical resize 55<CR> :split<CR> :term<CR>
 nnoremap <leader>td :TodoQuickFix<CR>
 nnoremap <leader><space> :Telescope git_files<CR>
 nnoremap <leader>fp :lua telescope_find_files_in_path()<CR>
