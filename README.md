@@ -181,17 +181,17 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
 | \<leader>p           | replace currently selected text with default register without yanking it               |
-| \<leader>fp          | find files in specified path                                                           |
 | \<leader>ff          | find files in `pwd`                                                                    |
-| \<leader>fb          | open file browser                                                                      |
 | \<leader>fl          | search files for text                                                                  |
+| \<leader>fb          | open file browser                                                                      |
+| \<leader>fp          | find files in specified path                                                           |
 | \<leader>h           | remove highlights                                                                      |
 | \<leader>t           | toggle terminal window                                                                 |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
 | \<leader>td          | open my list of TODOs for the `pwd`                                                    |
 | \<leader>ww          | open my [VimWiki](http://vimwiki.github.io/)                                           |
-| F12                  | jump to definition (see note below)                                                    |
+| F12 (depreciated)    | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
 **note**: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping. I then remapped `ctrl-]` to `F12` to use that popular shortcut for go to definition.
