@@ -178,6 +178,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | Zl                   | correct the spelling of the word under the cursor                                      |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                   |
 | <leader>z            | open up NERDTree                                                                       |
+| s                    | open up file in vertical split mode with NERDTree                                      |
+| t                    | open up file in a new tab with NERDTree                                                |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
 | \<leader>p           | replace currently selected text with default register without yanking it               |
@@ -188,10 +190,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \<leader>h           | remove highlights                                                                      |
 | \<leader>t           | toggle terminal window                                                                 |
 | \<leader>gg          | toggle git window                                                                      |
-| s                    | open up file in vertical split mode with NERDTree                                      |
-| t                    | open up file in a new tab with NERDTree                                                |
 | \<leader>td          | open my list of TODOs for the `pwd`                                                    |
-| \<leader>ww          | open my [VimWiki](http://vimwiki.github.io/)                                           |
 | F12 (depreciated)    | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
