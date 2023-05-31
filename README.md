@@ -186,11 +186,11 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \<leader>fb          | open file browser                                                                      |
 | \<leader>fl          | search files for text                                                                  |
 | \<leader>h           | remove highlights                                                                      |
-| \<leader>g           | open [vimagit](https://github.com/jreybert/vimagit) window and small terminal window   |
+| \<leader>t           | toggle terminal window                                                                 |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
-| <leader>td           | open my list of TODOs for the `pwd`                                                    |
-| <leader>ww           | open my [VimWiki](http://vimwiki.github.io/)                                           |
+| \<leader>td          | open my list of TODOs for the `pwd`                                                    |
+| \<leader>ww          | open my [VimWiki](http://vimwiki.github.io/)                                           |
 | F12                  | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
 
