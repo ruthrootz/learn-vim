@@ -187,6 +187,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \<leader>fp          | find files in specified path                                                           |
 | \<leader>h           | remove highlights                                                                      |
 | \<leader>t           | toggle terminal window                                                                 |
+| \<leader>gg          | toggle git window                                                                      |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
 | \<leader>td          | open my list of TODOs for the `pwd`                                                    |
