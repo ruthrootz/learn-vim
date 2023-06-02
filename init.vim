@@ -47,6 +47,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'kdheepak/lazygit.nvim'
 Plug 'mhinz/vim-startify'
+Plug 'NvChad/nvim-colorizer.lua'
+Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate' }
+Plug 'bagrat/vim-buffet'
+Plug '1612492/github.vim'
 call plug#end()
 
 " CONFIG
@@ -54,6 +58,8 @@ call plug#end()
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 
 lua require("toggleterm").setup()
+lua require("colorizer").setup()
+lua require("mason").setup()
 
 nnoremap <SPACE> <Nop>
 let mapleader = " "
@@ -70,8 +76,8 @@ let g:NERDTreeStatusline = ''
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " toggle
 nnoremap <silent> <leader>z :NERDTreeToggle<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
+vmap + <plug>NERDCommenterToggle
+nmap + <plug>NERDCommenterToggle
 
 map <C-c> "+y<CR>
 map <C-v> "+p<CR>
@@ -96,13 +102,15 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:onedark_config = {
       \ 'style': 'deep',
       \}
-colorscheme onedark
 
 let g:lightline = {
       \ 'colorscheme': 'ayu_mirage',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'gitbranch', 'filename', 'modified' ] ],
+      \   'right': [ [ ],
+      \              [ 'percent' ],
+      \              [ ] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead'
@@ -131,6 +139,12 @@ set splitright
 set splitbelow
 set ignorecase smartcase
 set mouse=
+
+" THEMEING
+set termguicolors
+colorscheme github
+set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 syntax on
 filetype plugin on
