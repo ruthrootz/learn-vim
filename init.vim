@@ -35,10 +35,13 @@ Plug 'kamykn/popup-menu.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'wakatime/vim-wakatime'
 Plug 'preservim/nerdcommenter'
-Plug 'navarasu/onedark.nvim'
+Plug 'navarasu/onedark.nvim' " theme
+Plug '1612492/github.vim' " theme
 Plug 'folke/todo-comments.nvim'
 Plug 'ThePrimeagen/vim-be-good'
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/taglist.vim'
@@ -46,11 +49,9 @@ Plug 'eandrju/cellular-automaton.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'kdheepak/lazygit.nvim'
-Plug 'mhinz/vim-startify'
-Plug 'NvChad/nvim-colorizer.lua'
-Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate' }
-Plug 'bagrat/vim-buffet'
-Plug '1612492/github.vim'
+Plug 'mhinz/vim-startify' " start screen
+Plug 'NvChad/nvim-colorizer.lua' " highlight color values
+Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate' } " package manager
 call plug#end()
 
 " CONFIG
@@ -104,7 +105,7 @@ let g:onedark_config = {
       \}
 
 let g:lightline = {
-      \ 'colorscheme': 'ayu_mirage',
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'filename', 'modified' ] ],
@@ -138,13 +139,21 @@ set nocompatible
 set splitright
 set splitbelow
 set ignorecase smartcase
+set showtabline=2
 set mouse=
 
 " THEMEING
 set termguicolors
 colorscheme github
+let g:airline_theme = 'dark_dimmed'
+let g:airline_section_x=''
+let g:airline_section_y=''
+let g:airline_section_z='%l / %L | %3p%%'
 set background=dark
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE " make background transparent
+hi TabLineFill guifg=#22272E guibg=#22272E
+hi TabLine guifg=#2D333B guibg=#585d61
+hi TabLineSel guifg=#2D333B guibg=#6CB6FF
 
 syntax on
 filetype plugin on
