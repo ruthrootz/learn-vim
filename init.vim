@@ -15,6 +15,8 @@ if (empty($TMUX))
   endif
 endif
 
+
+
 " PLUG
 call plug#begin("~/.vim/plugged")
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -54,19 +56,14 @@ Plug 'NvChad/nvim-colorizer.lua' " highlight color values
 Plug 'williamboman/mason.nvim', { 'do': ':MasonUpdate' } " package manager
 call plug#end()
 
-" CONFIG
+
 
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 lua require("toggleterm").setup()
 lua require("colorizer").setup()
 lua require("mason").setup()
-
-nnoremap <SPACE> <Nop>
-let mapleader = " "
-
-" replace currently selected text with default register without yanking it
-vnoremap <leader>p "_dP
 
 let g:NERDTreeWinSize=35
 let g:NERDTreeShowHidden = 1
@@ -75,14 +72,6 @@ let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
 " automatically close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" toggle
-nnoremap <silent> <leader>z :NERDTreeToggle<CR>
-vmap + <plug>NERDCommenterToggle
-nmap + <plug>NERDCommenterToggle
-
-map <C-c> "+y<CR>
-map <C-v> "+p<CR>
-map <F12> <C-]>
 
 let g:Tlist_WinWidth=50
 
@@ -98,25 +87,7 @@ let g:vimwiki_syntax = 'markdown'
 let g:vimwiki_ext = '.md'
 let g:vimwiki_automatic_nested_syntaxes = 1
 
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-let g:onedark_config = {
-      \ 'style': 'deep',
-      \}
-
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'filename', 'modified' ] ],
-      \   'right': [ [ ],
-      \              [ 'percent' ],
-      \              [ ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
 
 set linebreak
 set textwidth=0
@@ -142,6 +113,8 @@ set ignorecase smartcase
 set showtabline=2
 set mouse=
 
+
+
 " THEMEING
 set termguicolors
 colorscheme github
@@ -155,13 +128,30 @@ hi TabLineFill guifg=#22272E guibg=#22272E
 hi TabLine guifg=#2D333B guibg=#585d61
 hi TabLineSel guifg=#2D333B guibg=#6CB6FF
 
+let g:onedark_config = {
+      \ 'style': 'deep',
+      \}
+
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'filename', 'modified' ] ],
+      \   'right': [ [ ],
+      \              [ 'percent' ],
+      \              [ ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
 syntax on
 filetype plugin on
 
-" turn terminal to normal mode with escape
-tnoremap <Esc> <C-\><C-n>
 
-" nvim-telescope/telescope.nvim
+
+" TELESCOPE
 lua << EOF
 _G.telescope_find_files_in_path = function(path)
 local _path = path or vim.fn.input("Dir: ", "", "dir")
@@ -205,6 +195,9 @@ require("telescope").setup {
 require("telescope").load_extension "file_browser"
 EOF
 
+
+
+" TODO COMMENTS
 lua << EOF
 require("todo-comments").setup {
   keywords = {
@@ -216,19 +209,27 @@ require("todo-comments").setup {
   }
 EOF
 
+
+
+" BINDINGS
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+tnoremap <Esc> <C-\><C-n> " turn terminal to normal mode with escape
+vnoremap p "_dP " replace currently selected text with default register without yanking it
+nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>h :noh<CR>
 nnoremap <leader>td :TodoQuickFix<CR>
-nnoremap <leader><space> :Telescope git_files<CR>
 nnoremap <leader>fp :lua telescope_find_files_in_path()<CR>
 nnoremap <leader>fP :lua telescope_live_grep_in_path()<CR>
 nnoremap <leader>ff :Telescope find_files<CR>
-nnoremap <leader>fb :Telescope file_browser<CR>
-nnoremap <leader>fg :Telescope git_branches<CR>
-"nnoremap <leader>fb :Telescope buffers<CR>"
-nnoremap <leader>fs :Telescope lsp_document_symbols<CR>
-nnoremap <leader>fl :Telescope live_grep<CR>
-nnoremap <leader>FF :Telescope grep_string<CR>
+nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap <leader>fc :Telescope live_grep<CR>
 nnoremap <leader>t :ToggleTerm<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
+vmap + <plug>NERDCommenterToggle
+nmap + <plug>NERDCommenterToggle
+map <C-c> "+y<CR>
+map <C-v> "+p<CR>
+map <F12> <C-]>
 
