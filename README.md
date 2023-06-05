@@ -174,7 +174,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | ctrl-c               | copy to system clipboard                                                               |
 | ctrl-v               | paste from system clipboard                                                            |
 | ctrl-y               | select an intellisense option from the list                                            |
-| cmd-/ (depreaciated) | comment/uncomment selected code                                                        |
 | +                    | comment/uncomment selected code                                                        |
 | Zl                   | correct the spelling of the word under the cursor                                      |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                   |
@@ -183,21 +182,17 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | t                    | open up file in a new tab with NERDTree                                                |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
-| \<leader>p           | replace currently selected text with default register without yanking it               |
 | \<leader>ff          | find files in `pwd`                                                                    |
-| \<leader>fl          | search files for text                                                                  |
-| \<leader>fb          | open file browser                                                                      |
-| \<leader>fp          | find files in specified path                                                           |
+| \<leader>fc          | search files for text                                                                  |
+| \<leader>fb          | search for open buffers                                                                |
 | \<leader>h           | remove highlights                                                                      |
 | \<leader>t           | toggle terminal window                                                                 |
 | \<leader>gg          | toggle git window                                                                      |
 | \<leader>td          | open my list of TODOs for the `pwd`                                                    |
-| F12 (depreciated)    | jump to definition (see note below)                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
+| F12                  | jump to definition (see note below)                                                    |
 
 **note**: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping. I then remapped `ctrl-]` to `F12` to use that popular shortcut for go to definition.
-
-**another note**: To get `cmd-/` to work (the way it does in VSCode) I had to remap nerdcommenter's `NERDCommenterToggle` to `++`. (Any unused keybinding should work.) Then in iTerm2 preferences I added a binding for `cmd-/` to send `++` as text. You can see the two lines in my `init.vim` for reference.
 
 #
 
