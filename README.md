@@ -178,7 +178,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | +                    | comment/uncomment selected code                                                        |
 | Zl                   | correct the spelling of the word under the cursor                                      |
 | ZL                   | display a list of spelling suggestions for the word under the cursor                   |
-| <leader>z            | open up NERDTree                                                                       |
+| <leader>n            | open up NERDTree                                                                       |
 | s                    | open up file in vertical split mode with NERDTree                                      |
 | t                    | open up file in a new tab with NERDTree                                                |
 | r                    | refresh file listing in NERDTree for current directory                                 |
