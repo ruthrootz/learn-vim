@@ -72,12 +72,12 @@ nmap <leader>fo  <Plug>(coc-format-selected)
 
 command! -nargs=0 Format :call CocActionAsync('format')
 
-nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <silent> S :call ShowDocumentation()<CR>
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    call feedkeys('K', 'in')
+    call feedkeys('S', 'in')
   endif
 endfunction
 
