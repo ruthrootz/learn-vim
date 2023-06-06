@@ -27,6 +27,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fannheyward/telescope-coc.nvim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'puremourning/vimspector'
 Plug 'leafgarland/typescript-vim'
@@ -64,8 +65,8 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " GoTo code navigation
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gi :Telescope coc implementations<CR>
+nmap <silent> gr :Telescope coc references<CR>
 xmap <leader>fo  <Plug>(coc-format-selected)
 nmap <leader>fo  <Plug>(coc-format-selected)
 
@@ -200,6 +201,10 @@ EOF
 lua << EOF
 require("telescope").setup {
   extensions = {
+    coc = {
+      theme = 'ivy',
+      prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
+      },
     file_browser = {
       theme = "ivy",
       -- disables netrw and use telescope-file-browser in its place
@@ -211,9 +216,10 @@ require("telescope").setup {
           },
       },
     },
-  },
+    },
 }
 require("telescope").load_extension "file_browser"
+require('telescope').load_extension('coc')
 EOF
 
 
