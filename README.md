@@ -103,8 +103,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | y                      | copy                                                                                 |
 | yy                     | copy current line                                                                    |
 | p, P                   | paste below/above the current line                                                   |
-| "*y                    | copy selected text to system clipboard (so you can paste outside of the terminal)    |
-| "*p                    | paste from system clipboard                                                          |
+| "\*y                   | copy selected text to system clipboard (so you can paste outside of the terminal)    |
+| "\*p                   | paste from system clipboard                                                          |
 |                        |                                                                                      |
 | viw                    | select the current word, no matter where in the word the cursor is                   |
 | vi{ or vi(             | select the current block of code between the curly brackets or parentheses           |
@@ -182,6 +182,8 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | t                    | open up file in a new tab with NERDTree                                                |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
+| K                    | see function signiture/docs for function under cursor                                  |
+| gd                   | go to the definition of the function/type under the cursor                             |
 | \<leader>ff          | find files in `pwd`                                                                    |
 | \<leader>fc          | search files for text                                                                  |
 | \<leader>fb          | search for open buffers                                                                |
@@ -190,9 +192,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | \<leader>gg          | toggle git window                                                                      |
 | \<leader>td          | open my list of TODOs for the `pwd`                                                    |
 | F8                   | toggle project structure map, courtesy of [taglist.vim](https://vim-taglist.sourceforge.net/index.html) plugin |
-| F12                  | jump to definition (see note below)                                                    |
-
-**note**: Install `ctags` on your machine and run `ctags -R --exclude=.git .` in your project's root folder to index your project and enable definition-jumping. I then remapped `ctrl-]` to `F12` to use that popular shortcut for go to definition.
 
 #
 
