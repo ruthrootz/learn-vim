@@ -1,5 +1,20 @@
 {
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
     "coc.preferences.diagnostic.virtualText": true,
+    "coc.preferences.formatOnSave": true,
+    "hover.floatConfig": {
+        "rounded": true,
+        "border": true
+    },
+    "signature.floatConfig": {
+        "rounded": true,
+        "border": true
+    },
+    "eslint.format.enable": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
