@@ -180,7 +180,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | t                    | open up file in a new tab with NERDTree                                                |
 | r                    | refresh file listing in NERDTree for current directory                                 |
 | R                    | refresh file listing in NERDTree for root directory                                    |
-| K                    | see function signiture/docs for function under cursor                                  |
+| S                    | see signiture/docs for function under cursor                                           |
 | gd                   | go to the definition of the function/type under the cursor                             |
 | \<leader>ff          | find files in `pwd`                                                                    |
 | \<leader>fc          | search files for text                                                                  |
