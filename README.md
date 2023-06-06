@@ -103,8 +103,6 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 | y                      | copy                                                                                 |
 | yy                     | copy current line                                                                    |
 | p, P                   | paste below/above the current line                                                   |
-| "\*y                   | copy selected text to system clipboard (so you can paste outside of the terminal)    |
-| "\*p                   | paste from system clipboard                                                          |
 |                        |                                                                                      |
 | viw                    | select the current word, no matter where in the word the cursor is                   |
 | vi{ or vi(             | select the current block of code between the curly brackets or parentheses           |
