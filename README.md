@@ -169,8 +169,7 @@ Now it's time to learn some handy commands that you can use in normal mode. Bein
 #### my-config specific
 |                      |                                                                                        |
 | -------------------- | -------------------------------------------------------------------------------------- |
-| +y                   | copy to system clipboard                                                               |
-| +p                   | paste from system clipboard                                                            |
+| Y                    | copy to system clipboard                                                               |
 | ctrl-y               | select an intellisense option from the list                                            |
 | +                    | comment/uncomment selected code                                                        |
 | Zl                   | correct the spelling of the word under the cursor                                      |
