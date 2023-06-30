@@ -256,7 +256,6 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
 vmap + <plug>NERDCommenterToggle
 nmap + <plug>NERDCommenterToggle
-map <C-c> "+y<CR>
-map <C-v> "+p<CR>
 map <F12> <C-]>
+map Y "+y<CR>
 
